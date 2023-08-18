@@ -1,7 +1,7 @@
 baseURL = "https:://renewelch.me/"
-theme = "apero"
+theme = "hugo-apero"
 languageCode = "en"
-title = "Hugo Apéro"
+title = "Rene Welch"
 author = "Rene Welch"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
