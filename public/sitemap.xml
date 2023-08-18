@@ -2,123 +2,132 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/collection/day02/01-netlify/</loc>
+    <loc>renewelch.me/collection/day02/01-netlify/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day01/01-github/</loc>
+    <loc>renewelch.me/collection/day01/01-github/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/prework/</loc>
+    <loc>renewelch.me/collection/prework/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day01/</loc>
+    <loc>renewelch.me/collection/day01/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day01/02-postcards/</loc>
+    <loc>renewelch.me/collection/day01/02-postcards/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day02/02-blogdown/</loc>
+    <loc>renewelch.me/collection/day02/02-blogdown/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day02/</loc>
+    <loc>renewelch.me/collection/day02/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day01/03-distill/</loc>
+    <loc>renewelch.me/collection/day01/03-distill/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/day02/03-blogdown/</loc>
+    <loc>renewelch.me/collection/day02/03-blogdown/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>renewelch.me/categories/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/tags/microbiome/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/categories/microbiome/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/project/microbiome-pipeline/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/categories/qc/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/categories/r/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/project/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/tags/</loc>
+    <lastmod>2023-07-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>renewelch.me/categories/decidua/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/decidua/</loc>
+    <loc>renewelch.me/talk/10xtalk/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/talk/10xtalk/</loc>
+    <loc>renewelch.me/categories/t-cells/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>renewelch.me/talk/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/t-cells/</loc>
+    <loc>renewelch.me/categories/tcr/</loc>
     <lastmod>2023-05-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/talk/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/tcr/</loc>
-    <lastmod>2023-05-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/wcsu-talk/</loc>
+    <loc>renewelch.me/talk/wcsu-talk/</loc>
     <lastmod>2022-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/</loc>
+    <loc>renewelch.me/collection/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/latex/</loc>
+    <loc>renewelch.me/categories/latex/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
+    <loc>renewelch.me/blog/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2019-06-14-uw-madison-poster-format/</loc>
+    <loc>renewelch.me/blog/2019-06-14-uw-madison-poster-format/</loc>
     <lastmod>2019-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/contact/</loc>
+    <loc>renewelch.me/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url><url>
-    <loc>/form/</loc>
+    <loc>renewelch.me/form/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url><url>
-    <loc>/elements/</loc>
+    <loc>renewelch.me/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url><url>
-    <loc>/categories/chip-seq/</loc>
+    <loc>renewelch.me/categories/chip-seq/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/chiputils/</loc>
+    <loc>renewelch.me/project/chiputils/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/genomics/</loc>
+    <loc>renewelch.me/tags/genomics/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/genomics/</loc>
+    <loc>renewelch.me/categories/genomics/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/qc/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/r/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/chip-exo/</loc>
+    <loc>renewelch.me/categories/chip-exo/</loc>
     <lastmod>2017-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/chip-nexus/</loc>
+    <loc>renewelch.me/categories/chip-nexus/</loc>
     <lastmod>2017-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/chipexoqual/</loc>
+    <loc>renewelch.me/project/chipexoqual/</loc>
     <lastmod>2017-09-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/segvis/</loc>
+    <loc>renewelch.me/project/segvis/</loc>
     <lastmod>2015-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/visualization/</loc>
+    <loc>renewelch.me/categories/visualization/</loc>
     <lastmod>2015-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>renewelch.me/about/</loc>
   </url><url>
-    <loc>/contributors/</loc>
+    <loc>renewelch.me/contributors/</loc>
   </url><url>
-    <loc>/license/</loc>
+    <loc>renewelch.me/license/</loc>
   </url><url>
-    <loc>/series/</loc>
+    <loc>renewelch.me/series/</loc>
   </url>
 </urlset>

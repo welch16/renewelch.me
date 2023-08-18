@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Apéro</title>
-    <link>/tags/</link>
+    <link>renewelch.me/tags/</link>
     <description>Recent content in Tags on Hugo Apéro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="renewelch.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>microbiome</title>
+      <link>renewelch.me/tags/microbiome/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>renewelch.me/tags/microbiome/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>genomics</title>
-      <link>/tags/genomics/</link>
+      <link>renewelch.me/tags/genomics/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/genomics/</guid>
+      <guid>renewelch.me/tags/genomics/</guid>
       <description></description>
     </item>
     
