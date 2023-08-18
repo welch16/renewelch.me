@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Hugo Apéro</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Hugo Apéro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>decidua</title>
+      <link>/categories/decidua/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/decidua/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>t-cells</title>
+      <link>/categories/t-cells/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/t-cells/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tcr</title>
+      <link>/categories/tcr/</link>
+      <pubDate>Thu, 04 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/tcr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>/categories/latex/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChIP-seq</title>
+      <link>/categories/chip-seq/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/chip-seq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genomics</title>
+      <link>/categories/genomics/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/genomics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>QC</title>
+      <link>/categories/qc/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/qc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/categories/r/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChIP-exo</title>
+      <link>/categories/chip-exo/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/chip-exo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChIP-nexus</title>
+      <link>/categories/chip-nexus/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/chip-nexus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualization</title>
+      <link>/categories/visualization/</link>
+      <pubDate>Fri, 03 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/visualization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
