@@ -1,5 +1,5 @@
-baseURL = "renewelch.me"
-theme = "hugo-apero"
+baseURL = "https:://renewelch.me/"
+theme = "apero"
 languageCode = "en"
 title = "Hugo Apéro"
 author = "Rene Welch"
