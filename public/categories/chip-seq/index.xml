@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ChIP-seq on Hugo Apéro</title>
-    <link>renewelch.me/categories/chip-seq/</link>
-    <description>Recent content in ChIP-seq on Hugo Apéro</description>
+    <title>ChIP-seq on Rene Welch</title>
+    <link>https:://renewelch.me/categories/chip-seq/</link>
+    <description>Recent content in ChIP-seq on Rene Welch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="renewelch.me/categories/chip-seq/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="https:://renewelch.me/categories/chip-seq/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ChIPUtils</title>
-      <link>renewelch.me/project/chiputils/</link>
+      <link>https:://renewelch.me/project/chiputils/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>renewelch.me/project/chiputils/</guid>
-      <description> ChIPUtils is an R package that contains many functions used for exploratory analysis of ChIP-seq and ChIP-exo data.     It includes some commonly used quality control measures:
- PCR bottleneck coefficient Strand cross-correlation  </description>
+      <guid>https:://renewelch.me/project/chiputils/</guid>
+      <description> ChIPUtils is an R package that contains many functions used for exploratory analysis of ChIP-seq and ChIP-exo data. It includes some commonly used quality control measures:
+PCR bottleneck coefficient Strand cross-correlation </description>
     </item>
     
   </channel>

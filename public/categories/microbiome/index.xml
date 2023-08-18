@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>microbiome on Hugo Apéro</title>
-    <link>renewelch.me/categories/microbiome/</link>
-    <description>Recent content in microbiome on Hugo Apéro</description>
+    <title>microbiome on Rene Welch</title>
+    <link>https:://renewelch.me/categories/microbiome/</link>
+    <description>Recent content in microbiome on Rene Welch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="renewelch.me/categories/microbiome/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https:://renewelch.me/categories/microbiome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>microbiome-pipeline</title>
-      <link>renewelch.me/project/microbiome-pipeline/</link>
+      <link>https:://renewelch.me/project/microbiome-pipeline/</link>
       <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>renewelch.me/project/microbiome-pipeline/</guid>
-      <description> microbiome-pipeline is a wrapper around dada2 built with snakemake     </description>
+      <guid>https:://renewelch.me/project/microbiome-pipeline/</guid>
+      <description> microbiome-pipeline is a wrapper around dada2 built with snakemake </description>
     </item>
     
   </channel>
