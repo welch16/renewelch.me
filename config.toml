@@ -30,7 +30,7 @@ enableEmoji = true
 [params]
   orgName = ""
   orgLocal = ""
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  description = "Rene Welch's research site."
   favicon = "/img/favicon.ico"
   logo = "/img/blogophonic-mark-dark.png"
   mainSections = ["blog", "project", "talk"]
