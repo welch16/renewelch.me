@@ -22,6 +22,4 @@ link_list:
   url: https://en.wikipedia.org/wiki/Pastry
 - name: # People
   url: https://en.wikipedia.org/wiki/People
-
-
 --->
