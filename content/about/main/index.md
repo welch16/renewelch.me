@@ -3,11 +3,11 @@
 title: "This blog?" # leave blank to exclude
 number_featured: 1 # pulling from mainSections in config.toml
 use_featured: false # if false, use most recent by date
-number_categories: 0 # set to zero to exclude
-show_intro: false
+number_categories: 1 # set to zero to exclude
+show_intro: true
 intro: |
   
-  I hope to write some stuff periodically, but evidence dictates that I am going to forget about this and only post slides every now and then...
+  I 
 
 
 show_outro: false

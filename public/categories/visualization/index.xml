@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>visualization on Rene Welch</title>
-    <link>https:://renewelch.me/categories/visualization/</link>
+    <link>https://renewelch.me/categories/visualization/</link>
     <description>Recent content in visualization on Rene Welch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Jul 2015 00:00:00 +0000</lastBuildDate><atom:link href="https:://renewelch.me/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jul 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://renewelch.me/categories/visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Segvis</title>
-      <link>https:://renewelch.me/project/segvis/</link>
+      <link>https://renewelch.me/project/segvis/</link>
       <pubDate>Fri, 03 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https:://renewelch.me/project/segvis/</guid>
+      <guid>https://renewelch.me/project/segvis/</guid>
       <description>Segvis is a package to visualize genomic data around genomic regions. An R package to visualize ChIP-seq experiments across a set of pre-defined peaks. The package requires a set of pre-defined genomic regions, and aligned reads in bam format. We can do many tasks with it, some examples are:
 Extracts read data of specified input regions Plot peaks of different conditions across the same set of regions Plot central measures for a set of regions with the same width Subset regions according to used defined annotations Plot the heatmap of signal curves accross regions separated by annotation The package is available here</description>
     </item>
