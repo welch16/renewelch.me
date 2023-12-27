@@ -1,5 +1,5 @@
 ---
-title: This blog?
+title: "This blog?"
 description: ""
 author: "Rene Welch"
 show_post_thumbnail: true
@@ -7,7 +7,7 @@ thumbnail_left: true # for list-sidebar only
 show_author_byline: false
 show_post_date: true
 # for listing page layout
-layout: list-sidebar # list, list-sidebar, list-grid
+layout: list # list, list-sidebar, list-grid
 
 # for list-sidebar layout
 sidebar: 
@@ -18,7 +18,7 @@ sidebar:
   text_link_label: Subscribe via RSS
   text_link_url: /index.xml
   categories_link: true
-  series_link: true
+  series_link: false
   tags_link: true
   show_sidebar_adunit: false # show ad container
 
