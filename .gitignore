@@ -5,3 +5,4 @@
 public/
 /.quarto/
 .bash_profile
+_freeze/
