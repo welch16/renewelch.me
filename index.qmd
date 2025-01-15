@@ -1,0 +1,37 @@
+---
+title: ""
+image: avatar.jpg
+from: markdown+emoji
+about:
+  template: trestles
+  links:
+    - text: "{{< ai orcid >}} ORCID 0000-0001-9861-530X"
+      url: https://orcid.org/0000-0001-9861-530X
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      url: https://scholar.google.com/citations?user=nsqGh6UAAAAJ&hl=en
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/welch16/
+    - icon: github
+      text: GitHub
+      href: https://github.com/welch16
+    - icon: gitlab
+      text: GitLab
+      href: https://git.doit.wisc.edu/RWELCH2
+    - text: 🦋 Bluesky
+      href: https://bsky.app/profile/renewelch.bsky.social   
+---
+
+## Bio
+
+My name is Rene Welch and I am a mixture between biostatician and computational biologist, working at the intersection of ML, immunology and cancer. 
+
+In a previous life, I used to work on computational finance topics when I graduated with a BSc in Applied Mathematics from ITAM in Mexico, and then I changed gears towards the study of epigenomics and GWAS when I earned my Ph.D. in Statistics at the University of Wisconsin - Madison.
+
+Currently, I am part of the [Department of Biostatistics and Medical Informatics at the University of Wisconsin - Madison](https://biostat.wisc.edu) where I work as a scientist in [Dr. Irene Ong lab](https://pages.cs.wisc.edu/~ong/) and at the [Cancer and Informatics Shared Resource](https://cancer.wisc.edu/research/resources/cisr/)
+
+## Personal life
+
+I live in Madison, where I spend my free time biking :bike: around the city.
+
+<center>🐈🐈🐈</center>

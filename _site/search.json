@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Exploring Chatterjee’s new coefficient of correlation\n\n\n\n\n\n\ndependence measures\n\n\n\n\n\n\n\n\n\nJan 15, 2025\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Wisconsin Poster format\n\n\n\n\n\n\nLaTeX\n\n\nOverleaf\n\n\n\n\n\n\n\n\n\nJun 14, 2019\n\n\nRene Welch\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "software/chiputils/index.html",
+    "href": "software/chiputils/index.html",
+    "title": "ChIPUtils",
+    "section": "",
+    "text": "It includes some commonly used quality control measures:\n\nPCR bottleneck coefficient (PBC)\nStrand cross-correlation (SCC)\n\nBelow, I show an example of the SCC computed with ChIPUtils"
+  },
+  {
+    "objectID": "software/chiputils/index.html#chiputils-is-an-r-package-that-contains-many-functions-used-for-exploratory-analysis-of-chip-seq-and-chip-exo-data.",
+    "href": "software/chiputils/index.html#chiputils-is-an-r-package-that-contains-many-functions-used-for-exploratory-analysis-of-chip-seq-and-chip-exo-data.",
+    "title": "ChIPUtils",
+    "section": "",
+    "text": "It includes some commonly used quality control measures:\n\nPCR bottleneck coefficient (PBC)\nStrand cross-correlation (SCC)\n\nBelow, I show an example of the SCC computed with ChIPUtils"
+  },
+  {
+    "objectID": "software/segvis/index.html",
+    "href": "software/segvis/index.html",
+    "title": "Segvis",
+    "section": "",
+    "text": "An R package to visualize ChIP-seq experiments across a set of pre-defined peaks. The package requires a set of pre-defined genomic regions, and aligned reads in bam format. We can do many tasks with it, some examples are:\n\nExtracts read data of specified input regions\nPlot peaks of different conditions across the same set of regions\nPlot central measures for a set of regions with the same width\nSubset regions according to used defined annotations\nPlot the heatmap of signal curves accross regions separated by annotation\n\nThe package is available here\nThe image below was generated with Segvis, and it shows the CTCF and histone experiments signal around the CTCF peaks’ summits."
+  },
+  {
+    "objectID": "software/segvis/index.html#segvis-is-a-package-to-visualize-genomic-data-around-genomic-regions.",
+    "href": "software/segvis/index.html#segvis-is-a-package-to-visualize-genomic-data-around-genomic-regions.",
+    "title": "Segvis",
+    "section": "",
+    "text": "An R package to visualize ChIP-seq experiments across a set of pre-defined peaks. The package requires a set of pre-defined genomic regions, and aligned reads in bam format. We can do many tasks with it, some examples are:\n\nExtracts read data of specified input regions\nPlot peaks of different conditions across the same set of regions\nPlot central measures for a set of regions with the same width\nSubset regions according to used defined annotations\nPlot the heatmap of signal curves accross regions separated by annotation\n\nThe package is available here\nThe image below was generated with Segvis, and it shows the CTCF and histone experiments signal around the CTCF peaks’ summits."
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Integration of multi-omics datasets at the maternal-fetal interface: A case study in Preeclampsia\n\n\n\n\n\n\ntcr\n\n\ndecidua\n\n\nt-cells\n\n\n\n\n\n\n\n\n\nMay 4, 2023\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nFarm like bacteria protect WI children from eczema and wheezing\n\n\n\n\n\n\ntcr\n\n\ndecidua\n\n\nt-cells\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\nRene Welch\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2019-06-14-uw-madison-poster-format/index.html",
+    "href": "posts/2019-06-14-uw-madison-poster-format/index.html",
+    "title": "University of Wisconsin Poster format",
+    "section": "",
+    "text": "I recently presented a poster at GLBIO 2019. I adapted the Emory Poster template to have UW Madison’s colors. And it will look similar to:\n\nI hope this is useful!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ReneWelch.me",
+    "section": "",
+    "text": "My name is Rene Welch and I am a mixture between biostatician and computational biologist, working at the intersection of ML, immunology and cancer.\nIn a previous life, I used to work on computational finance topics when I graduated with a BSc in Applied Mathematics from ITAM in Mexico, and then I changed gears towards the study of epigenomics and GWAS when I earned my Ph.D. in Statistics at the University of Wisconsin - Madison.\nCurrently, I am part of the Department of Biostatistics and Medical Informatics at the University of Wisconsin - Madison where I work as a scientist in Dr. Irene Ong lab and at the Cancer and Informatics Shared Resource"
+  },
+  {
+    "objectID": "index.html#bio",
+    "href": "index.html#bio",
+    "title": "ReneWelch.me",
+    "section": "",
+    "text": "My name is Rene Welch and I am a mixture between biostatician and computational biologist, working at the intersection of ML, immunology and cancer.\nIn a previous life, I used to work on computational finance topics when I graduated with a BSc in Applied Mathematics from ITAM in Mexico, and then I changed gears towards the study of epigenomics and GWAS when I earned my Ph.D. in Statistics at the University of Wisconsin - Madison.\nCurrently, I am part of the Department of Biostatistics and Medical Informatics at the University of Wisconsin - Madison where I work as a scientist in Dr. Irene Ong lab and at the Cancer and Informatics Shared Resource"
+  },
+  {
+    "objectID": "index.html#personal-life",
+    "href": "index.html#personal-life",
+    "title": "ReneWelch.me",
+    "section": "Personal life",
+    "text": "Personal life\nI live in Madison, where I spend my free time biking 🚲 around the city.\n\n🐈🐈🐈"
+  },
+  {
+    "objectID": "software/microbiome-pipeline/index.html",
+    "href": "software/microbiome-pipeline/index.html",
+    "title": "microbiome-pipeline",
+    "section": "",
+    "text": "Screenshot of microbiome-pipeline github repo"
+  },
+  {
+    "objectID": "software/microbiome-pipeline/index.html#microbiome-pipeline-is-a-wrapper-around-dada2-built-with-snakemake",
+    "href": "software/microbiome-pipeline/index.html#microbiome-pipeline-is-a-wrapper-around-dada2-built-with-snakemake",
+    "title": "microbiome-pipeline",
+    "section": "",
+    "text": "Screenshot of microbiome-pipeline github repo"
+  },
+  {
+    "objectID": "software/chipexoqual/index.html",
+    "href": "software/chipexoqual/index.html",
+    "title": "ChIPexoQual",
+    "section": "",
+    "text": "ChIP-exo/nexus experiments rely on innovative modifications of the commonly used ChIP-seq protocol for high resolution mapping of transcription factor binding sites. Although many aspects of the ChIP-exo data analysis are similar to those of ChIP-seq, these high throughput experiments pose a number of unique quality control and analysis challenges. We develop a novel statistical quality control pipeline and accompanying R/Bioconductor package, ChIPexoQual, to enable exploration and analysis of ChIP-exo and related experiments. ChIPexoQual evaluates a number of key issues including strand imbalance, library complexity, and signal enrichment of data. Assessment of these features are facilitated through diagnostic plots and summary statistics computed over regions of the genome with varying levels of coverage.\nThis work was published on Nucleic Acids Research"
+  },
+  {
+    "objectID": "software/chipexoqual/index.html#chipexoqual-is-a-quality-control-pipeline-for-chip-exonexus-data.",
+    "href": "software/chipexoqual/index.html#chipexoqual-is-a-quality-control-pipeline-for-chip-exonexus-data.",
+    "title": "ChIPexoQual",
+    "section": "",
+    "text": "ChIP-exo/nexus experiments rely on innovative modifications of the commonly used ChIP-seq protocol for high resolution mapping of transcription factor binding sites. Although many aspects of the ChIP-exo data analysis are similar to those of ChIP-seq, these high throughput experiments pose a number of unique quality control and analysis challenges. We develop a novel statistical quality control pipeline and accompanying R/Bioconductor package, ChIPexoQual, to enable exploration and analysis of ChIP-exo and related experiments. ChIPexoQual evaluates a number of key issues including strand imbalance, library complexity, and signal enrichment of data. Assessment of these features are facilitated through diagnostic plots and summary statistics computed over regions of the genome with varying levels of coverage.\nThis work was published on Nucleic Acids Research"
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "SatTCR\n\n\n\n\n\n\ndocker\n\n\nsnakemake\n\n\nT-cells\n\n\nImmunology\n\n\nQC\n\n\n\n\n\n\n\n\n\nJan 11, 2025\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nmicrobiome-pipeline\n\n\n\n\n\n\nR\n\n\nmicrobiome\n\n\nQC\n\n\nsnakemake\n\n\n\n\n\n\n\n\n\nJul 12, 2023\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nChIPUtils\n\n\n\n\n\n\nR\n\n\ngenomics\n\n\nQC\n\n\nChIP-seq\n\n\n\n\n\n\n\n\n\nOct 3, 2017\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nChIPexoQual\n\n\n\n\n\n\nR\n\n\ngenomics\n\n\nQC\n\n\nChIP-exo\n\n\nChIP-nexus\n\n\n\n\n\n\n\n\n\nSep 6, 2017\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nSegvis\n\n\n\n\n\n\nR\n\n\ngenomics\n\n\nvisualization\n\n\n\n\n\n\n\n\n\nJul 3, 2015\n\n\nRene Welch\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html",
+    "href": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html",
+    "title": "Exploring Chatterjee’s new coefficient of correlation",
+    "section": "",
+    "text": "Here we explore the correlation coefficient (Chatterjee 2021), in which a general correlation coefficient is provided such that is zero when a pair of random variables in indepent and one when there is a definite functional relationship. In that paper, he referenced Dette, Siburg, and Stoimenov (2013), as the first time this coefficient appeared, for which the defined the same \\(\\xi\\) coefficient but only applicable to continuous copulas.\nThe intuition behind the \\(\\xi\\) coefficient is based on two concepts, first a regression dependence order and then a measure of a regression dependence order, without too much detail the \\(\\xi\\) coefficient is one of these measures.\n\nXI coefficient definitionXI propertiesTesting independence\n\n\nLet \\((X_1, Y_1), \\cdots, (X_n, Y_n)\\) be a pair of random variables where \\(Y\\) is not constant, and both are distributed as \\((X,Y)\\). Rearrange the data as \\((X_{(1), Y_{(1)}}), \\cdots, (X_{(n)}, Y_{(n)})\\) such that \\(X_{(1)} \\leq X_{(2)} \\leq \\cdots \\leq X_{(n)}\\), and let \\(r_i\\) be the rank of \\(Y_{(i)}\\) then:\n\\[\n\\xi_n(X,Y) := 1 - \\dfrac{3\\sum_{i=1}^{n-1} | r_{i+1} - r_i|}{n^2 - 1}\n\\]\nand this converges to:\n\\[\n\\xi(X,Y) := \\dfrac{\\int \\text{var}(\\mathbb{E}[1(Y \\geq t)\\mid X])d\\mu(t)}{\\int \\text{var}(1(Y \\geq t))d\\mu(t)}\n\\]\nwhere \\(\\mu\\) is the probability law of \\(Y\\). This coefficient is 0 if and only if \\(X\\) and \\(Y\\) are independent and 1 if and only if \\(Y = f(X)\\)\n\n\n\nIf \\(X\\) and \\(Y\\) are independent, then so \\(1(Y\\geq t)\\) and \\(X\\), therefore \\[\n\\mathbb{E}[1(Y \\geq t)\\mid X] = \\mathbb{E}[1(Y \\geq t)] = P(Y \\geq t)\n\\]\ni.e. a number, and then \\(\\text{var}(P(Y \\geq t)) = 0\\).\nIf \\(Y = f(X)\\), then knowing \\(X\\) is the same a knowing \\(Y\\), so \\(\\mathbb{E}[1(Y \\geq t)\\mid X] = 1(Y \\geq t )\\), so \\(\\xi(X,Y)=1\\)\nThe proof of convergence is based in a few tricks:\n\nFirst the rank quantity \\(r_i / n \\approx F(Y_{(i)})\\), so we can say \\[\\xi_n(X,Y) \\approx 1 - \\frac{3}{n}\\sum_{i=1}^n |F(Y_i) - F(Y_{N(i)})|,\\] this is because \\(N(i)\\) is the unique index \\(j\\) such that \\(X_j\\) is to the right of \\(X_i\\)\nNote: \\(|F(x) - F(y)| = \\int (1(t \\leq x) - 1(t \\leq y))^2 d\\mu(t)\\), for any \\(x,y\\), therefore: \\[|F(Y_i) - F(Y_{N(i)})| = \\int (1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2 d\\mu(t)=\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]\\]\nThe second trick appears from the law of iterated expectation \\(\\mathbb{E}[Y] = \\mathbb{E}[\\mathbb{E}[Y|X]]\\), so first focus on the inside part first:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]\\approx 2 \\text{var}(1(t \\leq Y_i) \\mid X_1, \\cdots,X_n) \\\\ &= 2 \\text{var}(1(t \\leq Y_i)\\mid X_i)\\end{aligned}\\]\nThe argument here is that since \\(X_i\\) is very close to \\(X_{N(i)}\\), then the random variables \\(Y_i\\) and \\(Y_{N(i)}\\) are approx. iid after conditioning.\n\nApplying the expectation to both sides gives:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]=\\mathbb{E}[\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]] \\\\ &\\approx 2 \\mathbb{E}[\\text{var}(1(t \\leq Y_i) \\mid X)] \\\\ &= 2\\text{var}(1(t \\leq Y)) - 2 \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])\\end{aligned}\\]\nthe last one is because of the law of total variance\nSo, the whole expression:\n\\[\\begin{aligned}\\frac{1}{n}& |F(Y_i) - F(Y_{N(i)})| \\approx \\mathbb{E}[|F(Y_i) - F(Y_{N(i)})|]\\\\ &\\approx   2 \\int \\text{var}(1(t \\leq Y))d\\mu(t)- 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\end{aligned}\\]\n\nThe first term:\n\n\\[\\int \\text{var}(1(t \\leq Y))d\\mu(t) = \\int F(t)(1 - F(t))d\\mu(t)= \\int_0^1 x(1-x)dx = \\frac{1}{6}\\]\nso we get at the end:\n\\[\\begin{aligned}\\xi_n(X,Y) &\\approx 1 - 3 \\times \\left(\\frac{2}{6} - 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\right) \\\\\n&=6 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t) = \\xi(X,Y)\\end{aligned}\\]\n\n\n\nIf \\(X\\) and \\(Y\\) are independent then:\n\\[\n\\sqrt{n} \\xi_n(X,Y) \\longrightarrow N(0, \\tau^2)\n\\]\n\nIf \\(Y\\) is continoous \\(\\tau^2 = 2/5\\)\nOtherwise:\n\n\\[\n\\tau^{2}=\\dfrac{\\mathbb{E}\\phi(Y_{1},Y_{2})^{2}-2 \\mathbb{E}(\\phi(Y_{1},Y_{2})\\phi(Y_{1},Y_{3}))+ (\\mathbb{E}(\\phi(Y_{1},Y_{2})))\n^2}{(\\mathbb{E}[G(Y)(1 - G(Y))])^{2}}\n\\]\nwhere \\(Y_1, Y_2\\) and \\(Y_3\\) are three independent copies of \\(Y\\), \\(F(t) = P(Y\\leq t)\\), \\(G(t)=P(Y\\geq t)\\) and \\(\\phi(y,y') = \\min\\{F(y), F(y')\\}\\)\nTo estimate \\(\\tau^2\\) use:\n\\[\n\\hat{\\tau}_{n}^2=\\frac{a_{n}-2b_{n}+c_{n}^2}{d_{n}^2}\n\\]\nwhere to define \\(a_{n},b_{n},c_{n}\\) and \\(d_{n}\\), define\n\\[\n\\begin{align}\nR(i)&=\\#\\{j: Y_{j}\\leq Y_{i}\\} \\\\\nL(i)&=\\# \\{j: Y_{j}\\geq Y_{i}\\}\n\\end{align}\n\\]\nthen let \\(u_{1}\\leq \\cdots u_{n}\\) be an increasing arrangement of \\(R(1),\\cdots, R(n)\\) and \\(v_{i}=\\sum\\limits_{j=1}^{i}u_{j}\\):\n\\[\n\\begin{align}\na_{n}&= \\frac{1}{n^{4}}\\sum\\limits_{i=1}^{n}(2n - 2i +1)u_{i}^{2} \\\\\nb_{n}&= \\frac{1}{n^{5}}\\sum\\limits_{i=1}^{n} (v_{i} + (n-i)u_{i})^{2} \\\\\nc_{n}&= \\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n} (2n - 2i +1)u_{i}\\\\\nd_{n}&=\\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n}L(i)(n - L(i))\n\\end{align}\n\\]\nThe results above allow to test for independence between \\(X\\) and \\(Y\\) by using \\(\\mathcal{H}_0:\\xi = 0\\) where \\(\\xi:=\\xi(X,Y)\\)\n\n\n\n\nFunctional dependence and noise\nHere we are going to try dif and only iferent cases for when \\(Y=f(X) + \\epsilon, \\epsilon \\sim N(0, \\sigma^2)\\) and vary \\(\\sigma^2\\). In both cases, we can see that the \\(\\xi\\) coefficient decreases as the error’s variance \\(\\sigma^2\\) increases; and at the end is not surprising because as the error increases, then the functional dependence is less visually obvious.\n\nExample 1Example 2\n\n\n\\(f(x) = sin(1/x)\\), where \\(x\\in (0, .5)\\), and sampling \\(n=100\\) points.\n\n\n\n\n\nExample 1: Example of the xi coefficient when the noise increases\n\n\n\n\n\n\n\\(f(x) = cos(x)\\), where \\(x\\in (-5, 5)\\), and sampling \\(n=1000\\) points.\n\n\n\n\n\nExample 2: Example of the xi coefficient when the noise increases\n\n\n\n\n\n\n\n\n\nFunctional dependence, convergence and independence\nNow, we are going to show a different series of examples where the noise is fixed but the number of sampled points increases. In this case, we first sample the error \\(\\epsilon \\sim  N(0,\\sigma^2)\\), and then \\(n\\) points from the grid defining the domain of the function in the example.\n\nAlmost noiselessA little noiseA lot of noise\n\n\n\\(y = sin(1/x) + N(0, 0.001)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nThe variance is really small, so we are almost approximating the function when sampling large n\n\n\n\n\n\n\n\\(y = sin(1/x) + N(0, 0.1)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nThe noise is small, and so it is the range of the function, so it seems almost independent in larger n\n\n\n\n\n\n\n\\(y = sin(1/x) + N(0, 3)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nVery noise, so for every n the independence is not rejected\n\n\n\n\n\n\n\nWe can also see that sometimes the \\(\\xi\\) coefficient is negative, and that is because is computed with asymptotic formula, which even though is easy to use, there is not guarantee for it to be non-negative.\n\n\n\n\n\nReferences\n\nChatterjee, Sourav. 2021. “A new coefficient of correlation.” Journal of the American Statistical Association 116 (536): 2009–22.\n\n\nDette, Holger, Karl F Siburg, and Pavel A Stoimenov. 2013. “A copula‐based non‐parametric measure of regression dependence: Copula-based non-parametric measure.” Scandinavian Journal of Statistics, Theory and Applications 40 (1): 21–41."
+  },
+  {
+    "objectID": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html#xi-properties",
+    "href": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html#xi-properties",
+    "title": "Exploring Chatterjee’s new coefficient of correlation",
+    "section": "\\(\\xi\\) properties",
+    "text": "\\(\\xi\\) properties\n\nIf \\(X\\) and \\(Y\\) are independent, then so \\(1(Y\\geq t)\\) and \\(X\\), therefore \\[\n\\mathbb{E}[1(Y \\geq t)\\mid X] = \\mathbb{E}[1(Y \\geq t)] = P(Y \\geq t)\n\\]\ni.e. a number, and then \\(\\text{var}(P(Y \\geq t)) = 0\\).\nIf \\(Y = f(X)\\), then knowing \\(X\\) is the same a knowing \\(Y\\), so \\(\\mathbb{E}[1(Y \\geq t)\\mid X] = 1(Y \\geq t )\\), so \\(\\xi(X,Y)=1\\)\nThe proof of convergence is based in a few tricks:\n\nFirst the rank quantity \\(r_i / n \\approx F(Y_{(i)})\\), so we can say \\[\\xi_n(X,Y) \\approx 1 - \\frac{3}{n}\\sum_{i=1}^n |F(Y_i) - F(Y_{N(i)})|,\\] this is because \\(N(i)\\) is the unique index \\(j\\) such that \\(X_j\\) is to the right of \\(X_i\\)\nNote: \\(|F(x) - F(y)| = \\int (1(t \\leq x) - 1(t \\leq y))^2 d\\mu(t)\\), for any \\(x,y\\), therefore: \\[|F(Y_i) - F(Y_{N(i)})| = \\int (1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2 d\\mu(t)=\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]\\]\nThe second trick appears from the law of iterated expectation \\(\\mathbb{E}[Y] = \\mathbb{E}[\\mathbb{E}[Y|X]]\\), so first focus on the inside part first:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]\\approx 2 \\text{var}(1(t \\leq Y_i) \\mid X_1, \\cdots,X_n) \\\\ &= 2 \\text{var}(1(t \\leq Y_i)\\mid X_i)\\end{aligned}\\]\nThe argument here is that since \\(X_i\\) is very close to \\(X_{N(i)}\\), then the random variables \\(Y_i\\) and \\(Y_{N(i)}\\) are approx. iid after conditioning.\n\nApplying the expectation to both sides gives:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]=\\mathbb{E}[\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]] \\\\ &\\approx 2 \\mathbb{E}[\\text{var}(1(t \\leq Y_i) \\mid X)] \\\\ &= 2\\text{var}(1(t \\leq Y)) - 2 \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])\\end{aligned}\\]\nthe last one is because of the law of total variance\nSo, the whole expression:\n\\[\\begin{aligned}\\frac{1}{n}& |F(Y_i) - F(Y_{N(i)})| \\approx \\mathbb{E}[|F(Y_i) - F(Y_{N(i)})|]\\\\ &\\approx   2 \\int \\text{var}(1(t \\leq Y))d\\mu(t)- 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\end{aligned}\\]\n\nThe first term:\n\n\\[\\int \\text{var}(1(t \\leq Y))d\\mu(t) = \\int F(t)(1 - F(t))d\\mu(t)= \\int_0^1 x(1-x)dx = \\frac{1}{6}\\]\nso we get at the end:\n\\[\\begin{aligned}\\xi_n(X,Y) &\\approx 1 - 3 \\times \\left(\\frac{2}{6} - 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\right) \\\\\n&=6 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t) = \\xi(X,Y)\\end{aligned}\\]"
+  },
+  {
+    "objectID": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html#asymptotics-and-testing-independence",
+    "href": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html#asymptotics-and-testing-independence",
+    "title": "Exploring Chatterjee’s new coefficient of correlation",
+    "section": "Asymptotics and testing independence",
+    "text": "Asymptotics and testing independence\nIf \\(X\\) and \\(Y\\) are independent then:\n\\[\n\\sqrt{n} \\xi_n(X,Y) \\longrightarrow N(0, \\tau^2)\n\\]\n\nIf \\(Y\\) is continoous \\(\\tau^2 = 2/5\\)\nOtherwise:\n\n\\[\n\\tau^{2}=\\dfrac{\\mathbb{E}\\phi(Y_{1},Y_{2})^{2}-2 \\mathbb{E}(\\phi(Y_{1},Y_{2})\\phi(Y_{1},Y_{3}))+ (\\mathbb{E}(\\phi(Y_{1},Y_{2})))\n^2}{(\\mathbb{E}[G(Y)(1 - G(Y))])^{2}}\n\\]\nwhere \\(Y_1, Y_2\\) and \\(Y_3\\) are three independent copies of \\(Y\\), \\(F(t) = P(Y\\leq t)\\), \\(G(t)=P(Y\\geq t)\\) and \\(\\phi(y,y') = \\min\\{F(y), F(y')\\}\\)\nTo estimate \\(\\tau^2\\) use:\n\\[\n\\hat{\\tau}_{n}^2=\\frac{a_{n}-2b_{n}+c_{n}^2}{d_{n}^2}\n\\]\nwhere to define \\(a_{n},b_{n},c_{n}\\) and \\(d_{n}\\), define\n\\[\n\\begin{align}\nR(i)&=\\#\\{j: Y_{j}\\leq Y_{i}\\} \\\\\nL(i)&=\\# \\{j: Y_{j}\\geq Y_{i}\\}\n\\end{align}\n\\]\nthen let \\(u_{1}\\leq \\cdots u_{n}\\) be an increasing arrangement of \\(R(1),\\cdots, R(n)\\) and \\(v_{i}=\\sum\\limits_{j=1}^{i}u_{j}\\):\n\\[\n\\begin{align}\na_{n}&= \\frac{1}{n^{4}}\\sum\\limits_{i=1}^{n}(2n - 2i +1)u_{i}^{2} \\\\\nb_{n}&= \\frac{1}{n^{5}}\\sum\\limits_{i=1}^{n} (v_{i} + (n-i)u_{i})^{2} \\\\\nc_{n}&= \\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n} (2n - 2i +1)u_{i}\\\\\nd_{n}&=\\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n}L(i)(n - L(i))\n\\end{align}\n\\]\nThe results above allow to test for independence between \\(X\\) and \\(Y\\) by using \\(\\mathcal{H}_0:\\xi = 0\\) where \\(\\xi:=\\xi(X,Y)\\)"
+  }
+]
