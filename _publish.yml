@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: c8f744c5-ca5d-4630-9fa8-e855190c7c69
+      url: https://clinquant-kheer-974751.netlify.app
