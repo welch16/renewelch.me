@@ -11,6 +11,7 @@ execute:
   include: false
   echo: false
   eval: true
+  freeze: true
 categories:
 - dependence measures
 ---

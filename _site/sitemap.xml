@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/blog.html</loc>
+    <loc>https://renewelch.me/blog.html</loc>
     <lastmod>2025-01-12T03:41:58.611Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/software/chiputils/index.html</loc>
+    <loc>https://renewelch.me/software/chiputils/index.html</loc>
     <lastmod>2025-01-12T05:51:24.124Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/software/sattcr/index.html</loc>
+    <loc>https://renewelch.me/software/sattcr/index.html</loc>
     <lastmod>2025-01-12T07:53:09.071Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/software/segvis/index.html</loc>
+    <loc>https://renewelch.me/software/segvis/index.html</loc>
     <lastmod>2025-01-12T05:52:02.604Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/talks/10xtalk/index.html</loc>
-    <lastmod>2025-01-12T23:32:40.569Z</lastmod>
+    <loc>https://renewelch.me/talks/bioc-code-2016/index.html</loc>
+    <lastmod>2025-01-15T05:13:15.308Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/talks.html</loc>
-    <lastmod>2025-01-12T23:36:23.138Z</lastmod>
-  </url>
-  <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/posts/2025-01-15_exploring_a_new_correlation_coeff/index.html</loc>
-    <lastmod>2025-01-15T04:49:08.412Z</lastmod>
-  </url>
-  <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/posts/2019-06-14-uw-madison-poster-format/index.html</loc>
-    <lastmod>2025-01-15T00:47:08.094Z</lastmod>
-  </url>
-  <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/talks/wcsu-talk/index.html</loc>
+    <loc>https://renewelch.me/talks/wcsu-talk/index.html</loc>
     <lastmod>2025-01-12T23:28:46.320Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/index.html</loc>
+    <loc>https://renewelch.me/posts/2019-06-14-uw-madison-poster-format/index.html</loc>
+    <lastmod>2025-01-15T00:47:08.094Z</lastmod>
+  </url>
+  <url>
+    <loc>https://renewelch.me/posts/2025-01-15_exploring_a_new_correlation_coeff/index.html</loc>
+    <lastmod>2025-01-15T04:49:08.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://renewelch.me/talks.html</loc>
+    <lastmod>2025-01-12T23:36:23.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://renewelch.me/talks/10xtalk/index.html</loc>
+    <lastmod>2025-01-12T23:32:40.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://renewelch.me/index.html</loc>
     <lastmod>2025-01-12T07:57:03.872Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/software/microbiome-pipeline/index.html</loc>
+    <loc>https://renewelch.me/software/microbiome-pipeline/index.html</loc>
     <lastmod>2025-01-12T05:56:57.291Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/software/chipexoqual/index.html</loc>
+    <loc>https://renewelch.me/software/chipexoqual/index.html</loc>
     <lastmod>2025-01-12T05:52:59.698Z</lastmod>
   </url>
   <url>
-    <loc>https://clinquant-kheer-974751.netlify.app/software.html</loc>
+    <loc>https://renewelch.me/software.html</loc>
     <lastmod>2025-01-12T23:27:19.799Z</lastmod>
   </url>
 </urlset>
