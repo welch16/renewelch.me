@@ -21,9 +21,6 @@ Here we explore the correlation coefficient [@Chatterjee2021-et], in which a gen
 The intuition behind the $\xi$ coefficient is based on two concepts, first a **regression dependence order** and then a **measure of a regression dependence order**, without too much detail the $\xi$ coefficient is one of these measures.
 
 
-
-
-
 ::: {.panel-tabset}
 
 ## XI coefficient definition
@@ -410,3 +407,11 @@ df |>
 :::
 
 We can also see that sometimes the $\xi$ coefficient is negative, and that is because is computed with asymptotic formula, which even though is easy to use, there is not guarantee for it to be non-negative.
+
+```{r}
+#| echo: true
+
+
+here::here() 
+
+```

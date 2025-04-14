@@ -2,6 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
+*rds
+*tsv
 public/
 /.quarto/
 .bash_profile

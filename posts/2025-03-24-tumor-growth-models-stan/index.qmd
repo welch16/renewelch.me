@@ -1,0 +1,326 @@
+---
+title: "Tumor volume models with Stan"
+# excerpt: "I made a poster format available in Overleaf"
+date: last-modified
+author: "Rene Welch"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+bibliography: "../../references.bib"
+execute: 
+  include: false
+  echo: false
+  eval: true
+  freeze: true
+  warning: false
+categories:
+- generalized linear models
+- stan
+- cancer
+---
+
+I have been attending many meetings, where collaborators presents tumor growth curves, and my curiosity got the best of me, so I decided to explore how these models work, and explore how to use Stan and fit a Bayesian model for the problem.
+
+Reading the methods section of @Jagodinsky2024-xx, it says that:
+
+> _"for tumor growth analysis, a linear mixed model after log transformation of tumor  volume was fitted on treatment and day. Day and the interaction between treatment and day were fixed effects "_
+
+which means that they used a model like:
+
+$$
+\log(y_{ijk}) = \mu + \beta_i^\text{treatment} + \gamma_j^\text{time} + (\beta \cdot \gamma)_{ij}^{\text{interaction}} + u_i + \varepsilon_{ijk}
+$$
+
+where the indexes correspond to treatment $i=1,\cdots, I$, time $t_j\in \{t_1 < t_2 <\cdots < t_J\}$ and $k=1,\cdots,m_{ij}$ are the mice alive for treatment $i$ at time $t_j$. In this model, the fixed effects are:
+
+- $\beta_i^\text{treatment}$: treatment effect for group $i$
+- $\gamma_j^\text{time}$: time effect for time point $t_j$
+- $(\beta \cdot \gamma)_{ij}^\text{interaction}$: interaction effect between group $i$ and time point $t_j$
+
+then, the random variables are:
+
+- $u_i \sim N(0, \tau^2)$: is the group random error
+- $\varepsilon_{ijk} \sim N(0, \sigma^2)$: the error for the model
+
+We are going to use the data from @Jagodinsky2024-xx for Figure 1 that is available with the article. @fig-rawdata shows the distribution of the tumor volume for each treatment group. We can see that there are some outliers at the later time points. Moreover, it seems that there is a decreasing trend in two of the groups in the bottom row.
+
+
+```{r}
+#| label: "setup"
+
+library(magrittr)
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+library(brms)
+library(tidybayes)
+library(ggdist)
+
+rawdata <- here::here("posts/2025-03-24-tumor-growth-models-stan/figure_1F.tsv") |>
+  read_tsv() |>
+  janitor::clean_names() |>
+  mutate(
+    group = factor(group),
+    group = fct_relevel(group, "Sham", after = 0L),
+    group = fct_relevel(group, "ICI", after = 1L),
+    group = fct_relevel(group, "BT", after = 2L))
+
+theme_set(
+  theme_bw() +
+    theme(
+      legend.position = "top",
+      strip.background = element_blank(),
+      strip.text = element_text(size = 14),
+      axis.text = element_text(size = 12),
+      axis.title = element_text(size = 14),
+      legend.text = element_text(size = 12),
+      legend.title = element_text(size = 14)))
+
+rawdata <- rawdata |>
+  mutate(day = factor(day))
+
+```
+
+
+```{r}
+#| label: "fig-rawdata"
+#| include: true
+#| fig-width: 10
+#| fig-height: 6
+#| out-width: "100%"
+#| fig-cap: "Right tumor volume by time point, stratified by treatment"
+
+
+
+rawdata |>
+  ggplot(aes(x = day, y = tumor_volume)) +
+    geom_boxplot(outliers = FALSE) +
+    geom_jitter(alpha = 1/2, colour = "steelblue", width = 1/5) +
+    scale_y_log10(labels = scales::label_log()) +
+    facet_wrap(facets = vars(group), nrow = 2) +
+    theme(legend.position = "none") +
+    labs(x = "day", y = expression(paste("tumor volume (", mm^{3}, ")")))
+
+```
+
+At the end, the formula for this experiment is a variation of the following:
+
+`log1p(tumor_volume) ~ 1 + group + day + (day * group) + (1 | group)`
+
+
+## Fitting the linear mixed effect model with lme4 
+
+This is straightforward, we used the same formula in the model below:
+
+
+```{r}
+#| label: "lme4-model"
+#| include: true
+#| eval: true
+#| echo: true
+
+linear_mod <- lmer(
+  formula = log1p(tumor_volume) ~ 0 + group + day + (day * group) + (1 | group), 
+  data = rawdata)
+
+```
+
+the output of this model is given by:
+
+```{r}
+#| label: "lme4-output"
+#| include: true
+#| eval: true
+
+linear_mod |>
+  broom.mixed::tidy() |>
+  dplyr::filter(effect == "fixed") |>
+  dplyr::select(-group, - effect) |>
+  gt::gt() |>
+    gt::fmt_scientific(
+      columns = c("df", "p.value")) |>
+    gt::fmt_number(
+      columns = c("estimate", "std.error", "statistic")) |>
+    gt::cols_add(
+      psgn = if_else(p.value <= 0.05, "*", "")) |>
+    gt::cols_label(psgn = "")
+
+
+```
+
+and the table shows that few of the coefficients are significantly different from zero. Moreover, the tumor volume can be calculated by adding term estimates, for example the tumor volume of `EBRT 8 + ICI` treatment at the 27$^\text{th}$ day is:
+
+```{r}
+#| label: "example"
+#| include: true
+#| echo: true
+#| eval: true
+
+exp(5.35 + 1.34 - 3.16) - 1
+
+```
+
+
+## Fitting the linear mixed effect model with brms
+
+Now to use `brms`, we can utilize the same formula but we have to define the priors:
+
+
+```{r}
+#| label: "brms-model"
+#| include: true
+#| echo: true
+#| eval: true
+
+bayes_mod <- brms::brm(
+  formula = log1p(tumor_volume) ~ 0 + group + day + (day * group) + (1 | group), 
+  data = rawdata,
+  family = gaussian(),
+  chains = 5,
+  cores = 1,
+  file = here::here("posts/2025-03-24-tumor-growth-models-stan/",
+    "tumor_growth"),
+  iter = 3000, warmup = 1000)
+
+```
+
+By default, this model uses flat priors for all the coefficients in the linear model, and the std. deviations of the random effects and error coefficients follow a student's t with 3 degrees of freedom and 2.5 as the scale parameter. Below is the `brms` output, and the `x` is when the `0` is outsize of the credible interval:
+
+
+```{r}
+#| label: "brms-output"
+#| include: true
+#| eval: true
+
+bayes_mod |>
+  broom.mixed::tidy() |>
+  dplyr::filter(effect == "fixed") |>
+  dplyr::select(-group, - effect, - component) |>
+  gt::gt() |>
+    gt::fmt_number() |>
+    gt::cols_add(
+      psgn = if_else(between(rep(0, n()), conf.low, conf.high), "", "x")) |>
+    gt::cols_label(psgn = "")
+
+```
+
+In both cases, the estimates are similar, except for the first two coefficients. For example if we take them and compute the difference:
+
+```{r}
+#| label: "fig-diff"
+#| include: true
+#| echo : false
+#| eval: true
+#| fig-width: 7
+#| fig-height: 3
+#| out-width: "75%"
+#| fig-cap: "Difference between frequentist and Bayesian estimate"
+
+inner_join(
+  linear_mod |>
+    broom.mixed::tidy() |>
+    filter(effect == "fixed") |>
+    dplyr::select(term, estimate),
+  bayes_mod |>
+    broom.mixed::tidy() |>
+    filter(effect == "fixed") |>
+    dplyr::select(term, estimate),
+  by = "term", suffix = c("_freq", "_bayes")) |>
+  mutate(
+    diff = estimate_freq - estimate_bayes,
+    term = factor(term, levels = term)) |>
+  ggplot(aes(x = term, y = diff)) +
+    geom_point(colour = "steelblue") +
+    geom_hline(yintercept = 0, linetype = "dashed") +
+    theme(
+      axis.text.x = element_blank(),
+      axis.ticks = element_blank()
+    ) +
+    labs(y = "freq - bayes")
+
+
+
+```
+
+### Bayesian treatment comparison
+
+We see that the estimates are similar enough, but the objective of this model is to compare the treatments at day t=27. 
+
+
+```{r}
+#| label: "brms-variables"
+#| include: true
+#| echo: true
+#| eval: true
+
+group_variables <- get_variables(bayes_mod) |>
+  str_subset("group") |>
+  str_subset("day", negate = TRUE) |>
+  str_subset("sd", negate = TRUE) |>
+  str_subset("r_group", negate = TRUE)
+
+group_variables
+
+day_variables <- get_variables(bayes_mod) |>
+  str_subset("b_day") |>
+  str_subset("27")
+
+day_variables
+
+interaction_variables <- get_variables(bayes_mod) |>
+  str_subset("27") |>
+  str_subset("group")
+
+
+interaction_variables
+
+random_eff_variables <- get_variables(bayes_mod) |>
+  str_subset("r_group")
+
+random_eff_variables
+
+``` 
+
+Then, we compute the posterior predictions based on the parameters; and we can see that our the posterior predictions follow a similar ordering as the raw data:
+
+
+```{r}
+#| label: "fig-post-27"
+#| include: true
+#| echo : false
+#| eval: true
+#| fig-width: 9
+#| fig-height: 5
+#| out-width: "85%"
+#| fig-cap: "Posterior predictions of tumor volume at t=27"
+
+
+mod_draws <- bayes_mod |>
+    spread_draws(
+      !!! rlang::syms(group_variables),
+      !!! rlang::syms(day_variables),
+      !!! rlang::syms(interaction_variables),
+      !!! rlang::syms(random_eff_variables)) |>
+    mutate(
+      `ICI at t=27` = b_groupICI + b_day27 + `b_groupICI:day27` + `r_group[ICI,Intercept]`,
+      `BT at t=27` = b_groupBT + b_day27 + `b_groupBT:day27` + `r_group[BT,Intercept]`,
+      `BT + ICI at t=27` = b_groupBTPICI + b_day27 + `b_groupBTPICI:day27` + `r_group[BT.+.ICI,Intercept]`,
+      `EBRT2 + ICI at t=27` = b_groupEBRT2PICI + b_day27 + `b_groupEBRT2PICI:day27` + `r_group[EBRT.2.+.ICI,Intercept]`,
+      `EBRT8 + ICI at t=27` = b_groupEBRT8PICI + b_day27 + `b_groupEBRT8PICI:day27` + `r_group[EBRT.8.+.ICI,Intercept]`,
+      `Sham at t=27` = b_groupSham + b_day27 + `r_group[Sham,Intercept]`)
+
+mod_draws |>
+  select(.chain, .iteration, .draw, ends_with("t=27")) |>
+  pivot_longer(ends_with("27"), names_to = ".variable", values_to = ".value") |>
+  mutate(
+    .variable = str_remove(.variable, " at t=27"),
+    .variable = factor(.variable),
+    .variable = forcats::fct_reorder(.variable, -.value)) |>
+  ggplot(aes(y = .variable, x = .value)) + 
+  stat_halfeye() +
+  labs(y = "condition at t=27", x = expression(paste("log(estimated tumor volume) (", mm^{3}, ")")))
+
+```
+
+
+## References
