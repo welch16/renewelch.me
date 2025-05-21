@@ -10,6 +10,7 @@
   {
     "listing": "/talks.html",
     "items": [
+      "/talks/using_quarto/index.html",
       "/talks/10xtalk/index.html",
       "/talks/wcsu-talk/index.html",
       "/talks/bioc-code-2016/index.html"

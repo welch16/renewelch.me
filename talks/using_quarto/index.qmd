@@ -1,0 +1,21 @@
+---
+title: "Using quarto for Bioinformatics reporting"
+date: 2025-05-21
+date_end: "2025-05-21"
+author: "Rene Welch"
+location: "Online"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+image: "featured.png"
+resources:
+  - using_quarto.html
+  - using_quarto_files/
+categories:
+- quarto
+- reproducible research
+---
+
+This are mostly some tricks that I wanted to share with other [CISR](https://cancer.wisc.edu/research/resources/cisr/) members. The slides are available below:
+
+{{< revealjs using_quarto.html >}}
