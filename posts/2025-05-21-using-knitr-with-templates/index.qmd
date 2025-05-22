@@ -79,9 +79,7 @@ The analysis that we want do do is in the `template.qmd` file, and its contents 
 
 ````
 
-The actual template can be downloaded from my {{}}
-
-Then, to apply the template to all the distributions, we need to do three steps:
+The actual template can be downloaded from my [GitHub repository](https://github.com/welch16/renewelch.me/blob/main/posts/2025-05-21-using-knitr-with-templates/template.qmd). Then, to apply the template to all the distributions, we need to do three steps:
 
 ```{r}
 #| label: "render-setup"
