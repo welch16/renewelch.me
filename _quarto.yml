@@ -1,5 +1,13 @@
 project:
   type: website
+  render:
+    - ./*.qmd
+    - posts/*/index.qmd
+    - posts/*/index.md
+    - talks/*/index.qmd
+    - talks/*/index.md
+    - software/*/index.qmd
+    - software/*/index.md
 
 website:
   title: "ReneWelch.me"

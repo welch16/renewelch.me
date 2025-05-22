@@ -28,6 +28,7 @@ When analyzing data, I face the situation where I want to repeat the same sort o
 #| include: false
 
 library(tidyverse)
+library(purrr)
 
 set.seed(12445)
 theme_set(
@@ -120,9 +121,13 @@ Then, evaluate the `parsed` object inside a `panel-tabset`:
 
 ```
 
+This ends up looking as below, one tab for each distribution:
+
 ::: {.panel-tabset}
 
 `r parsed`
 
 :::
+
+This process could facilitate the display of complex analysis!
 

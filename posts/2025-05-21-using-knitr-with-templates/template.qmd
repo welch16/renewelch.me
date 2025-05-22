@@ -12,11 +12,11 @@
 #| fig-cap: "Plot for {{dist}} distribution"
 
 my_data <- all_data |>
-    filter(dist == "{{dist}}") |>
-    pluck("data", 1)
+    dplyr::filter(dist == "{{dist}}") |>
+    purrr::pluck("data", 1)
 
 my_data |>
-    ggplot(aes(x = x, y = y )) +
-      geom_point()
+    ggplot2::ggplot(aes(x = x, y = y )) +
+      ggplot2::geom_point()
 
 ```
