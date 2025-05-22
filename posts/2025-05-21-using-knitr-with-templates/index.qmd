@@ -1,0 +1,130 @@
+---
+title: "Using quarto templates with knitr"
+# excerpt: "I made a poster format available in Overleaf"
+date: last-modified
+author: "Rene Welch"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+execute: 
+  include: false
+  echo: false
+  eval: true
+  freeze: true
+  warning: false
+resources: 
+  - template.qmd
+  - demo_template.qmd
+categories:
+- quarto
+- reproducible research
+- knitr
+---
+
+When analyzing data, I face the situation where I want to repeat the same sort of analysis for different aspect of the data, e.g. explore the relationship of batch effects with metadata variables, do differential expression analysis for all clusters in a single cell RNA-seq experiment, etc.
+
+```{r}
+#| label: "setup"
+#| include: false
+
+library(tidyverse)
+
+set.seed(12445)
+theme_set(
+  theme_bw() +
+  theme(
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 14),
+    strip.text = element_text(size = 14, colour = "navyblue"),
+    strip.background = element_blank()
+  )
+)
+
+```
+
+## Template example
+
+We first are going to generate a nested `tibble` that we are going to use for our example, in this case a nested `tibble`:
+
+```{r}
+#| label: "example-setup"
+#| include: true
+#| echo: false
+#| eval: true
+
+sample_size <- 40
+normal <- tibble(x = rnorm(sample_size), y = rnorm(sample_size))
+exponential <- tibble(x = rexp(sample_size), y = rexp(sample_size))
+tdist <- tibble(x = rt(sample_size, df = 2), y = rt(sample_size, df = 2))
+cauchy <- tibble(x = rcauchy(sample_size), y = rcauchy(sample_size))
+
+all_data <- tribble(
+  ~ dist, ~ data,
+  "normal", normal,
+  "exponential", exponential,
+  "t", tdist,
+  "cauchy", cauchy)
+
+all_data
+
+```
+
+The analysis that we want do do is in the `template.qmd` file, and its contents look like:
+
+````quarto
+
+{{< include demo_template.qmd >}}
+
+````
+
+The actual template can be downloaded from my {{}}
+
+Then, to apply the template to all the distributions, we need to do three steps:
+
+```{r}
+#| label: "render-setup"
+#| include: true
+#| echo: true
+#| eval: true
+
+render_fun <- function(dist) {
+
+ res <- knitr::knit_expand(
+    file = "template.qmd",
+      dist = dist)
+
+  res
+
+}
+
+#| 1. replace `{{dist}}` for the element of `all_data$dist`
+unparsed <- map(all_data$dist, render_fun)
+
+#| 2 - send the `all_data` object inside an R environment
+parsed <- knitr::knit_child(text = unlist(unparsed),
+   envir = rlang::env(
+    all_data = all_data
+  ))    
+
+```
+
+Then, evaluate the `parsed` object inside a `panel-tabset`:
+
+```txt
+
+::: {.panel-tabset}
+
+`.r parsed`
+
+:::
+
+```
+
+::: {.panel-tabset}
+
+`r parsed`
+
+:::
+

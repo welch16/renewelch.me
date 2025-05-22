@@ -1,0 +1,22 @@
+
+## {{dist}}
+
+```{.r}
+#| label: "fig-data-{{dist}}"
+#| include: true
+#| echo: true
+#| eval: true
+#| fig-width: 6
+#| fig-height: 6
+#| out-width: "65%"
+#| fig-cap: "Plot for {{dist}} distribution"
+
+my_data <- all_data |>
+    filter(dist == "{{dist}}") |>
+    pluck("data", 1)
+
+my_data |>
+    ggplot(aes(x = x, y = y )) +
+      geom_point()
+
+```

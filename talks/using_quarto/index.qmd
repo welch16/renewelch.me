@@ -11,6 +11,7 @@ image: "featured.png"
 resources:
   - using_quarto.html
   - using_quarto_files/
+  - images/
 categories:
 - quarto
 - reproducible research
