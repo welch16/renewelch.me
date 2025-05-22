@@ -42,11 +42,18 @@
     "text": "The slides are available in here"
   },
   {
-    "objectID": "posts/2019-06-14-uw-madison-poster-format/index.html",
-    "href": "posts/2019-06-14-uw-madison-poster-format/index.html",
-    "title": "University of Wisconsin Poster format",
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
     "section": "",
-    "text": "I recently presented a poster at GLBIO 2019. I adapted the Emory Poster template to have UW Madison’s colors. And it will look similar to:\n\nI hope this is useful!"
+    "text": "Using quarto for Bioinformatics reporting\n\n\n\nquarto\n\nreproducible research\n\n\n\n\n\n\n\n\n\nMay 21, 2025\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nIntegration of multi-omics datasets at the maternal-fetal interface: A case study in Preeclampsia\n\n\n\ntcr\n\ndecidua\n\nt-cells\n\n\n\n\n\n\n\n\n\nMay 4, 2023\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nFarm like bacteria protect WI children from eczema and wheezing\n\n\n\ntcr\n\ndecidua\n\nt-cells\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nA quality control pipeline for ChIP-exo and ChIP-nexus data\n\n\n\nChIP-exo\n\nChIP-nexus\n\n\n\n\n\n\n\n\n\nJun 24, 2016\n\n\nRene Welch\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html",
+    "href": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html",
+    "title": "Exploring Chatterjee’s new coefficient of correlation",
+    "section": "",
+    "text": "Here we explore the correlation coefficient (Chatterjee 2021), in which a general correlation coefficient is provided such that is zero when a pair of random variables in indepent and one when there is a definite functional relationship. In that paper, he referenced Dette, Siburg, and Stoimenov (2013), as the first time this coefficient appeared, for which the defined the same \\(\\xi\\) coefficient but only applicable to continuous copulas.\nThe intuition behind the \\(\\xi\\) coefficient is based on two concepts, first a regression dependence order and then a measure of a regression dependence order, without too much detail the \\(\\xi\\) coefficient is one of these measures.\n\nXI coefficient definitionXI propertiesTesting independence\n\n\nLet \\((X_1, Y_1), \\cdots, (X_n, Y_n)\\) be a pair of random variables where \\(Y\\) is not constant, and both are distributed as \\((X,Y)\\). Rearrange the data as \\((X_{(1), Y_{(1)}}), \\cdots, (X_{(n)}, Y_{(n)})\\) such that \\(X_{(1)} \\leq X_{(2)} \\leq \\cdots \\leq X_{(n)}\\), and let \\(r_i\\) be the rank of \\(Y_{(i)}\\) then:\n\\[\n\\xi_n(X,Y) := 1 - \\dfrac{3\\sum_{i=1}^{n-1} | r_{i+1} - r_i|}{n^2 - 1}\n\\]\nand this converges to:\n\\[\n\\xi(X,Y) := \\dfrac{\\int \\text{var}(\\mathbb{E}[1(Y \\geq t)\\mid X])d\\mu(t)}{\\int \\text{var}(1(Y \\geq t))d\\mu(t)}\n\\]\nwhere \\(\\mu\\) is the probability law of \\(Y\\). This coefficient is 0 if and only if \\(X\\) and \\(Y\\) are independent and 1 if and only if \\(Y = f(X)\\)\n\n\n\nIf \\(X\\) and \\(Y\\) are independent, then so \\(1(Y\\geq t)\\) and \\(X\\), therefore \\[\n\\mathbb{E}[1(Y \\geq t)\\mid X] = \\mathbb{E}[1(Y \\geq t)] = P(Y \\geq t)\n\\]\ni.e. a number, and then \\(\\text{var}(P(Y \\geq t)) = 0\\).\nIf \\(Y = f(X)\\), then knowing \\(X\\) is the same a knowing \\(Y\\), so \\(\\mathbb{E}[1(Y \\geq t)\\mid X] = 1(Y \\geq t )\\), so \\(\\xi(X,Y)=1\\)\nThe proof of convergence is based in a few tricks:\n\nFirst the rank quantity \\(r_i / n \\approx F(Y_{(i)})\\), so we can say \\[\\xi_n(X,Y) \\approx 1 - \\frac{3}{n}\\sum_{i=1}^n |F(Y_i) - F(Y_{N(i)})|,\\] this is because \\(N(i)\\) is the unique index \\(j\\) such that \\(X_j\\) is to the right of \\(X_i\\)\nNote: \\(|F(x) - F(y)| = \\int (1(t \\leq x) - 1(t \\leq y))^2 d\\mu(t)\\), for any \\(x,y\\), therefore: \\[|F(Y_i) - F(Y_{N(i)})| = \\int (1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2 d\\mu(t)=\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]\\]\nThe second trick appears from the law of iterated expectation \\(\\mathbb{E}[Y] = \\mathbb{E}[\\mathbb{E}[Y|X]]\\), so first focus on the inside part first:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]\\approx 2 \\text{var}(1(t \\leq Y_i) \\mid X_1, \\cdots,X_n) \\\\ &= 2 \\text{var}(1(t \\leq Y_i)\\mid X_i)\\end{aligned}\\]\nThe argument here is that since \\(X_i\\) is very close to \\(X_{N(i)}\\), then the random variables \\(Y_i\\) and \\(Y_{N(i)}\\) are approx. iid after conditioning.\n\nApplying the expectation to both sides gives:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]=\\mathbb{E}[\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]] \\\\ &\\approx 2 \\mathbb{E}[\\text{var}(1(t \\leq Y_i) \\mid X)] \\\\ &= 2\\text{var}(1(t \\leq Y)) - 2 \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])\\end{aligned}\\]\nthe last one is because of the law of total variance\nSo, the whole expression:\n\\[\\begin{aligned}\\frac{1}{n}& |F(Y_i) - F(Y_{N(i)})| \\approx \\mathbb{E}[|F(Y_i) - F(Y_{N(i)})|]\\\\ &\\approx   2 \\int \\text{var}(1(t \\leq Y))d\\mu(t)- 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\end{aligned}\\]\n\nThe first term:\n\n\\[\\int \\text{var}(1(t \\leq Y))d\\mu(t) = \\int F(t)(1 - F(t))d\\mu(t)= \\int_0^1 x(1-x)dx = \\frac{1}{6}\\]\nso we get at the end:\n\\[\\begin{aligned}\\xi_n(X,Y) &\\approx 1 - 3 \\times \\left(\\frac{2}{6} - 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\right) \\\\\n&=6 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t) = \\xi(X,Y)\\end{aligned}\\]\n\n\n\nIf \\(X\\) and \\(Y\\) are independent then:\n\\[\n\\sqrt{n} \\xi_n(X,Y) \\longrightarrow N(0, \\tau^2)\n\\]\n\nIf \\(Y\\) is continoous \\(\\tau^2 = 2/5\\)\nOtherwise:\n\n\\[\n\\tau^{2}=\\dfrac{\\mathbb{E}\\phi(Y_{1},Y_{2})^{2}-2 \\mathbb{E}(\\phi(Y_{1},Y_{2})\\phi(Y_{1},Y_{3}))+ (\\mathbb{E}(\\phi(Y_{1},Y_{2})))\n^2}{(\\mathbb{E}[G(Y)(1 - G(Y))])^{2}}\n\\]\nwhere \\(Y_1, Y_2\\) and \\(Y_3\\) are three independent copies of \\(Y\\), \\(F(t) = P(Y\\leq t)\\), \\(G(t)=P(Y\\geq t)\\) and \\(\\phi(y,y') = \\min\\{F(y), F(y')\\}\\)\nTo estimate \\(\\tau^2\\) use:\n\\[\n\\hat{\\tau}_{n}^2=\\frac{a_{n}-2b_{n}+c_{n}^2}{d_{n}^2}\n\\]\nwhere to define \\(a_{n},b_{n},c_{n}\\) and \\(d_{n}\\), define\n\\[\n\\begin{align}\nR(i)&=\\#\\{j: Y_{j}\\leq Y_{i}\\} \\\\\nL(i)&=\\# \\{j: Y_{j}\\geq Y_{i}\\}\n\\end{align}\n\\]\nthen let \\(u_{1}\\leq \\cdots u_{n}\\) be an increasing arrangement of \\(R(1),\\cdots, R(n)\\) and \\(v_{i}=\\sum\\limits_{j=1}^{i}u_{j}\\):\n\\[\n\\begin{align}\na_{n}&= \\frac{1}{n^{4}}\\sum\\limits_{i=1}^{n}(2n - 2i +1)u_{i}^{2} \\\\\nb_{n}&= \\frac{1}{n^{5}}\\sum\\limits_{i=1}^{n} (v_{i} + (n-i)u_{i})^{2} \\\\\nc_{n}&= \\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n} (2n - 2i +1)u_{i}\\\\\nd_{n}&=\\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n}L(i)(n - L(i))\n\\end{align}\n\\]\nThe results above allow to test for independence between \\(X\\) and \\(Y\\) by using \\(\\mathcal{H}_0:\\xi = 0\\) where \\(\\xi:=\\xi(X,Y)\\)\n\n\n\n\nFunctional dependence and noise\nHere we are going to try dif and only iferent cases for when \\(Y=f(X) + \\epsilon, \\epsilon \\sim N(0, \\sigma^2)\\) and vary \\(\\sigma^2\\). In both cases, we can see that the \\(\\xi\\) coefficient decreases as the error’s variance \\(\\sigma^2\\) increases; and at the end is not surprising because as the error increases, then the functional dependence is less visually obvious.\n\nExample 1Example 2\n\n\n\\(f(x) = sin(1/x)\\), where \\(x\\in (0, .5)\\), and sampling \\(n=100\\) points.\n\n\n\n\n\nExample 1: Example of the xi coefficient when the noise increases\n\n\n\n\n\n\n\\(f(x) = cos(x)\\), where \\(x\\in (-5, 5)\\), and sampling \\(n=1000\\) points.\n\n\n\n\n\nExample 2: Example of the xi coefficient when the noise increases\n\n\n\n\n\n\n\n\n\nFunctional dependence, convergence and independence\nNow, we are going to show a different series of examples where the noise is fixed but the number of sampled points increases. In this case, we first sample the error \\(\\epsilon \\sim  N(0,\\sigma^2)\\), and then \\(n\\) points from the grid defining the domain of the function in the example.\n\nAlmost noiselessA little noiseA lot of noise\n\n\n\\(y = sin(1/x) + N(0, 0.001)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nThe variance is really small, so we are almost approximating the function when sampling large n\n\n\n\n\n\n\n\\(y = sin(1/x) + N(0, 0.1)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nThe noise is small, and so it is the range of the function, so it seems almost independent in larger n\n\n\n\n\n\n\n\\(y = sin(1/x) + N(0, 3)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nVery noise, so for every n the independence is not rejected\n\n\n\n\n\n\n\nWe can also see that sometimes the \\(\\xi\\) coefficient is negative, and that is because is computed with asymptotic formula, which even though is easy to use, there is not guarantee for it to be non-negative.\n\n\n\n\n\nReferences\n\nChatterjee, Sourav. 2021. “A new coefficient of correlation.” Journal of the American Statistical Association 116 (536): 2009–22.\n\n\nDette, Holger, Karl F Siburg, and Pavel A Stoimenov. 2013. “A copula‐based non‐parametric measure of regression dependence: Copula-based non-parametric measure.” Scandinavian Journal of Statistics, Theory and Applications 40 (1): 21–41."
   },
   {
     "objectID": "posts/2025-03-24-tumor-growth-models-stan/index.html",
@@ -70,18 +77,18 @@
     "text": "Fitting the linear mixed effect model with brms\nNow to use brms, we can utilize the same formula but we have to define the priors:\n\nbayes_mod &lt;- brms::brm(\n  formula = log1p(tumor_volume) ~ 0 + group + day + (day * group) + (1 | group), \n  data = rawdata,\n  family = gaussian(),\n  chains = 5,\n  cores = 1,\n  file = here::here(\"posts/2025-03-24-tumor-growth-models-stan/\",\n    \"tumor_growth\"),\n  iter = 3000, warmup = 1000)\n\nBy default, this model uses flat priors for all the coefficients in the linear model, and the std. deviations of the random effects and error coefficients follow a student’s t with 3 degrees of freedom and 2.5 as the scale parameter. Below is the brms output, and the x is when the 0 is outsize of the credible interval:\n\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nconf.low\nconf.high\n\n\n\n\n\ngroupSham\n5.41\n2.34\n0.72\n11.22\nx\n\n\ngroupICI\n5.17\n2.09\n0.36\n9.79\nx\n\n\ngroupBT\n5.27\n2.06\n0.77\n9.66\nx\n\n\ngroupBTPICI\n5.29\n1.98\n0.42\n9.51\nx\n\n\ngroupEBRT2PICI\n5.29\n2.02\n0.52\n9.47\nx\n\n\ngroupEBRT8PICI\n5.32\n1.88\n1.08\n9.49\nx\n\n\nday3\n0.33\n0.44\n−0.54\n1.20\n\n\n\nday6\n0.71\n0.44\n−0.14\n1.62\n\n\n\nday10\n0.96\n0.45\n0.08\n1.83\nx\n\n\nday13\n1.14\n0.47\n0.24\n2.06\nx\n\n\nday17\n1.44\n0.48\n0.52\n2.38\nx\n\n\nday20\n1.76\n0.52\n0.75\n2.78\nx\n\n\nday24\n1.56\n0.60\n0.40\n2.78\nx\n\n\nday27\n1.33\n0.79\n−0.18\n2.87\n\n\n\ngroupICI:day3\n−0.06\n0.63\n−1.31\n1.16\n\n\n\ngroupBT:day3\n0.38\n0.63\n−0.84\n1.62\n\n\n\ngroupBTPICI:day3\n−0.07\n0.56\n−1.20\n1.02\n\n\n\ngroupEBRT2PICI:day3\n0.05\n0.57\n−1.07\n1.15\n\n\n\ngroupEBRT8PICI:day3\n−0.04\n0.57\n−1.17\n1.06\n\n\n\ngroupICI:day6\n−0.06\n0.62\n−1.30\n1.14\n\n\n\ngroupBT:day6\n0.29\n0.64\n−1.00\n1.55\n\n\n\ngroupBTPICI:day6\n−0.29\n0.57\n−1.44\n0.81\n\n\n\ngroupEBRT2PICI:day6\n−0.03\n0.56\n−1.14\n1.06\n\n\n\ngroupEBRT8PICI:day6\n−0.27\n0.57\n−1.40\n0.84\n\n\n\ngroupICI:day10\n0.05\n0.63\n−1.19\n1.28\n\n\n\ngroupBT:day10\n0.25\n0.64\n−0.97\n1.51\n\n\n\ngroupBTPICI:day10\n−0.43\n0.56\n−1.53\n0.68\n\n\n\ngroupEBRT2PICI:day10\n−0.05\n0.57\n−1.18\n1.05\n\n\n\ngroupEBRT8PICI:day10\n−0.51\n0.57\n−1.63\n0.61\n\n\n\ngroupICI:day13\n−0.30\n0.66\n−1.59\n0.99\n\n\n\ngroupBT:day13\n−0.09\n0.69\n−1.44\n1.27\n\n\n\ngroupBTPICI:day13\n−0.75\n0.58\n−1.89\n0.39\n\n\n\ngroupEBRT2PICI:day13\n−0.10\n0.58\n−1.26\n1.03\n\n\n\ngroupEBRT8PICI:day13\n−0.71\n0.59\n−1.86\n0.44\n\n\n\ngroupICI:day17\n−0.47\n0.67\n−1.81\n0.82\n\n\n\ngroupBT:day17\n−0.19\n0.71\n−1.58\n1.19\n\n\n\ngroupBTPICI:day17\n−1.39\n0.60\n−2.57\n−0.22\nx\n\n\ngroupEBRT2PICI:day17\n−0.57\n0.60\n−1.73\n0.60\n\n\n\ngroupEBRT8PICI:day17\n−1.42\n0.59\n−2.60\n−0.26\nx\n\n\ngroupICI:day20\n−0.60\n0.70\n−1.99\n0.75\n\n\n\ngroupBT:day20\n−0.28\n0.74\n−1.73\n1.20\n\n\n\ngroupBTPICI:day20\n−1.91\n0.63\n−3.11\n−0.63\nx\n\n\ngroupEBRT2PICI:day20\n−0.83\n0.63\n−2.07\n0.40\n\n\n\ngroupEBRT8PICI:day20\n−1.97\n0.62\n−3.18\n−0.73\nx\n\n\ngroupICI:day24\n−0.29\n0.75\n−1.78\n1.14\n\n\n\ngroupBT:day24\n−0.23\n0.85\n−1.91\n1.41\n\n\n\ngroupBTPICI:day24\n−1.90\n0.69\n−3.27\n−0.55\nx\n\n\ngroupEBRT2PICI:day24\n−0.46\n0.69\n−1.83\n0.89\n\n\n\ngroupEBRT8PICI:day24\n−2.08\n0.69\n−3.47\n−0.71\nx\n\n\ngroupICI:day27\n−0.24\n0.93\n−2.07\n1.59\n\n\n\ngroupBT:day27\n0.25\n1.10\n−1.90\n2.39\n\n\n\ngroupBTPICI:day27\n−2.07\n0.87\n−3.75\n−0.36\nx\n\n\ngroupEBRT2PICI:day27\n−0.58\n0.87\n−2.28\n1.14\n\n\n\ngroupEBRT8PICI:day27\n−3.14\n0.87\n−4.85\n−1.44\nx\n\n\n\n\n\n\n\nIn both cases, the estimates are similar, except for the first two coefficients. For example if we take them and compute the difference:\n\n\n\n\n\n\n\n\nFigure 2: Difference between frequentist and Bayesian estimate\n\n\n\n\n\n\nBayesian treatment comparison\nWe see that the estimates are similar enough, but the objective of this model is to compare the treatments at day t=27.\n\ngroup_variables &lt;- get_variables(bayes_mod) |&gt;\n  str_subset(\"group\") |&gt;\n  str_subset(\"day\", negate = TRUE) |&gt;\n  str_subset(\"sd\", negate = TRUE) |&gt;\n  str_subset(\"r_group\", negate = TRUE)\n\ngroup_variables\n\n[1] \"b_groupSham\"      \"b_groupICI\"       \"b_groupBT\"        \"b_groupBTPICI\"   \n[5] \"b_groupEBRT2PICI\" \"b_groupEBRT8PICI\"\n\nday_variables &lt;- get_variables(bayes_mod) |&gt;\n  str_subset(\"b_day\") |&gt;\n  str_subset(\"27\")\n\nday_variables\n\n[1] \"b_day27\"\n\ninteraction_variables &lt;- get_variables(bayes_mod) |&gt;\n  str_subset(\"27\") |&gt;\n  str_subset(\"group\")\n\n\ninteraction_variables\n\n[1] \"b_groupICI:day27\"       \"b_groupBT:day27\"        \"b_groupBTPICI:day27\"   \n[4] \"b_groupEBRT2PICI:day27\" \"b_groupEBRT8PICI:day27\"\n\nrandom_eff_variables &lt;- get_variables(bayes_mod) |&gt;\n  str_subset(\"r_group\")\n\nrandom_eff_variables\n\n[1] \"r_group[Sham,Intercept]\"         \"r_group[ICI,Intercept]\"         \n[3] \"r_group[BT,Intercept]\"           \"r_group[BT.+.ICI,Intercept]\"    \n[5] \"r_group[EBRT.2.+.ICI,Intercept]\" \"r_group[EBRT.8.+.ICI,Intercept]\"\n\n\nThen, we compute the posterior predictions based on the parameters; and we can see that our the posterior predictions follow a similar ordering as the raw data:\n\n\n\n\n\n\n\n\nFigure 3: Posterior predictions of tumor volume at t=27"
   },
   {
-    "objectID": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html",
-    "href": "posts/2025-01-15_exploring_a_new_correlation_coeff/index.html",
-    "title": "Exploring Chatterjee’s new coefficient of correlation",
+    "objectID": "posts/2019-06-14-uw-madison-poster-format/index.html",
+    "href": "posts/2019-06-14-uw-madison-poster-format/index.html",
+    "title": "University of Wisconsin Poster format",
     "section": "",
-    "text": "Here we explore the correlation coefficient (Chatterjee 2021), in which a general correlation coefficient is provided such that is zero when a pair of random variables in indepent and one when there is a definite functional relationship. In that paper, he referenced Dette, Siburg, and Stoimenov (2013), as the first time this coefficient appeared, for which the defined the same \\(\\xi\\) coefficient but only applicable to continuous copulas.\nThe intuition behind the \\(\\xi\\) coefficient is based on two concepts, first a regression dependence order and then a measure of a regression dependence order, without too much detail the \\(\\xi\\) coefficient is one of these measures.\n\nXI coefficient definitionXI propertiesTesting independence\n\n\nLet \\((X_1, Y_1), \\cdots, (X_n, Y_n)\\) be a pair of random variables where \\(Y\\) is not constant, and both are distributed as \\((X,Y)\\). Rearrange the data as \\((X_{(1), Y_{(1)}}), \\cdots, (X_{(n)}, Y_{(n)})\\) such that \\(X_{(1)} \\leq X_{(2)} \\leq \\cdots \\leq X_{(n)}\\), and let \\(r_i\\) be the rank of \\(Y_{(i)}\\) then:\n\\[\n\\xi_n(X,Y) := 1 - \\dfrac{3\\sum_{i=1}^{n-1} | r_{i+1} - r_i|}{n^2 - 1}\n\\]\nand this converges to:\n\\[\n\\xi(X,Y) := \\dfrac{\\int \\text{var}(\\mathbb{E}[1(Y \\geq t)\\mid X])d\\mu(t)}{\\int \\text{var}(1(Y \\geq t))d\\mu(t)}\n\\]\nwhere \\(\\mu\\) is the probability law of \\(Y\\). This coefficient is 0 if and only if \\(X\\) and \\(Y\\) are independent and 1 if and only if \\(Y = f(X)\\)\n\n\n\nIf \\(X\\) and \\(Y\\) are independent, then so \\(1(Y\\geq t)\\) and \\(X\\), therefore \\[\n\\mathbb{E}[1(Y \\geq t)\\mid X] = \\mathbb{E}[1(Y \\geq t)] = P(Y \\geq t)\n\\]\ni.e. a number, and then \\(\\text{var}(P(Y \\geq t)) = 0\\).\nIf \\(Y = f(X)\\), then knowing \\(X\\) is the same a knowing \\(Y\\), so \\(\\mathbb{E}[1(Y \\geq t)\\mid X] = 1(Y \\geq t )\\), so \\(\\xi(X,Y)=1\\)\nThe proof of convergence is based in a few tricks:\n\nFirst the rank quantity \\(r_i / n \\approx F(Y_{(i)})\\), so we can say \\[\\xi_n(X,Y) \\approx 1 - \\frac{3}{n}\\sum_{i=1}^n |F(Y_i) - F(Y_{N(i)})|,\\] this is because \\(N(i)\\) is the unique index \\(j\\) such that \\(X_j\\) is to the right of \\(X_i\\)\nNote: \\(|F(x) - F(y)| = \\int (1(t \\leq x) - 1(t \\leq y))^2 d\\mu(t)\\), for any \\(x,y\\), therefore: \\[|F(Y_i) - F(Y_{N(i)})| = \\int (1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2 d\\mu(t)=\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]\\]\nThe second trick appears from the law of iterated expectation \\(\\mathbb{E}[Y] = \\mathbb{E}[\\mathbb{E}[Y|X]]\\), so first focus on the inside part first:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]\\approx 2 \\text{var}(1(t \\leq Y_i) \\mid X_1, \\cdots,X_n) \\\\ &= 2 \\text{var}(1(t \\leq Y_i)\\mid X_i)\\end{aligned}\\]\nThe argument here is that since \\(X_i\\) is very close to \\(X_{N(i)}\\), then the random variables \\(Y_i\\) and \\(Y_{N(i)}\\) are approx. iid after conditioning.\n\nApplying the expectation to both sides gives:\n\n\\[\\begin{aligned}\\mathbb{E}&[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2]=\\mathbb{E}[\\mathbb{E}[(1 (t \\leq Y_i) - 1(t \\leq Y_{N(i)}))^2\\mid X_1,\\cdots, X_n]] \\\\ &\\approx 2 \\mathbb{E}[\\text{var}(1(t \\leq Y_i) \\mid X)] \\\\ &= 2\\text{var}(1(t \\leq Y)) - 2 \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])\\end{aligned}\\]\nthe last one is because of the law of total variance\nSo, the whole expression:\n\\[\\begin{aligned}\\frac{1}{n}& |F(Y_i) - F(Y_{N(i)})| \\approx \\mathbb{E}[|F(Y_i) - F(Y_{N(i)})|]\\\\ &\\approx   2 \\int \\text{var}(1(t \\leq Y))d\\mu(t)- 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\end{aligned}\\]\n\nThe first term:\n\n\\[\\int \\text{var}(1(t \\leq Y))d\\mu(t) = \\int F(t)(1 - F(t))d\\mu(t)= \\int_0^1 x(1-x)dx = \\frac{1}{6}\\]\nso we get at the end:\n\\[\\begin{aligned}\\xi_n(X,Y) &\\approx 1 - 3 \\times \\left(\\frac{2}{6} - 2 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t)\\right) \\\\\n&=6 \\int \\text{var}(\\mathbb{E}[1(t \\leq Y)\\mid X])d\\mu(t) = \\xi(X,Y)\\end{aligned}\\]\n\n\n\nIf \\(X\\) and \\(Y\\) are independent then:\n\\[\n\\sqrt{n} \\xi_n(X,Y) \\longrightarrow N(0, \\tau^2)\n\\]\n\nIf \\(Y\\) is continoous \\(\\tau^2 = 2/5\\)\nOtherwise:\n\n\\[\n\\tau^{2}=\\dfrac{\\mathbb{E}\\phi(Y_{1},Y_{2})^{2}-2 \\mathbb{E}(\\phi(Y_{1},Y_{2})\\phi(Y_{1},Y_{3}))+ (\\mathbb{E}(\\phi(Y_{1},Y_{2})))\n^2}{(\\mathbb{E}[G(Y)(1 - G(Y))])^{2}}\n\\]\nwhere \\(Y_1, Y_2\\) and \\(Y_3\\) are three independent copies of \\(Y\\), \\(F(t) = P(Y\\leq t)\\), \\(G(t)=P(Y\\geq t)\\) and \\(\\phi(y,y') = \\min\\{F(y), F(y')\\}\\)\nTo estimate \\(\\tau^2\\) use:\n\\[\n\\hat{\\tau}_{n}^2=\\frac{a_{n}-2b_{n}+c_{n}^2}{d_{n}^2}\n\\]\nwhere to define \\(a_{n},b_{n},c_{n}\\) and \\(d_{n}\\), define\n\\[\n\\begin{align}\nR(i)&=\\#\\{j: Y_{j}\\leq Y_{i}\\} \\\\\nL(i)&=\\# \\{j: Y_{j}\\geq Y_{i}\\}\n\\end{align}\n\\]\nthen let \\(u_{1}\\leq \\cdots u_{n}\\) be an increasing arrangement of \\(R(1),\\cdots, R(n)\\) and \\(v_{i}=\\sum\\limits_{j=1}^{i}u_{j}\\):\n\\[\n\\begin{align}\na_{n}&= \\frac{1}{n^{4}}\\sum\\limits_{i=1}^{n}(2n - 2i +1)u_{i}^{2} \\\\\nb_{n}&= \\frac{1}{n^{5}}\\sum\\limits_{i=1}^{n} (v_{i} + (n-i)u_{i})^{2} \\\\\nc_{n}&= \\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n} (2n - 2i +1)u_{i}\\\\\nd_{n}&=\\frac{1}{n^{3}}\\sum\\limits_{i=1}^{n}L(i)(n - L(i))\n\\end{align}\n\\]\nThe results above allow to test for independence between \\(X\\) and \\(Y\\) by using \\(\\mathcal{H}_0:\\xi = 0\\) where \\(\\xi:=\\xi(X,Y)\\)\n\n\n\n\nFunctional dependence and noise\nHere we are going to try dif and only iferent cases for when \\(Y=f(X) + \\epsilon, \\epsilon \\sim N(0, \\sigma^2)\\) and vary \\(\\sigma^2\\). In both cases, we can see that the \\(\\xi\\) coefficient decreases as the error’s variance \\(\\sigma^2\\) increases; and at the end is not surprising because as the error increases, then the functional dependence is less visually obvious.\n\nExample 1Example 2\n\n\n\\(f(x) = sin(1/x)\\), where \\(x\\in (0, .5)\\), and sampling \\(n=100\\) points.\n\n\n\n\n\nExample 1: Example of the xi coefficient when the noise increases\n\n\n\n\n\n\n\\(f(x) = cos(x)\\), where \\(x\\in (-5, 5)\\), and sampling \\(n=1000\\) points.\n\n\n\n\n\nExample 2: Example of the xi coefficient when the noise increases\n\n\n\n\n\n\n\n\n\nFunctional dependence, convergence and independence\nNow, we are going to show a different series of examples where the noise is fixed but the number of sampled points increases. In this case, we first sample the error \\(\\epsilon \\sim  N(0,\\sigma^2)\\), and then \\(n\\) points from the grid defining the domain of the function in the example.\n\nAlmost noiselessA little noiseA lot of noise\n\n\n\\(y = sin(1/x) + N(0, 0.001)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nThe variance is really small, so we are almost approximating the function when sampling large n\n\n\n\n\n\n\n\\(y = sin(1/x) + N(0, 0.1)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nThe noise is small, and so it is the range of the function, so it seems almost independent in larger n\n\n\n\n\n\n\n\\(y = sin(1/x) + N(0, 3)\\) for \\(x \\in (0, 0.5)\\)\n\n\n\n\n\nVery noise, so for every n the independence is not rejected\n\n\n\n\n\n\n\nWe can also see that sometimes the \\(\\xi\\) coefficient is negative, and that is because is computed with asymptotic formula, which even though is easy to use, there is not guarantee for it to be non-negative.\n\n\n\n\n\nReferences\n\nChatterjee, Sourav. 2021. “A new coefficient of correlation.” Journal of the American Statistical Association 116 (536): 2009–22.\n\n\nDette, Holger, Karl F Siburg, and Pavel A Stoimenov. 2013. “A copula‐based non‐parametric measure of regression dependence: Copula-based non-parametric measure.” Scandinavian Journal of Statistics, Theory and Applications 40 (1): 21–41."
+    "text": "I recently presented a poster at GLBIO 2019. I adapted the Emory Poster template to have UW Madison’s colors. And it will look similar to:\n\nI hope this is useful!"
   },
   {
-    "objectID": "talks.html",
-    "href": "talks.html",
-    "title": "Talks",
+    "objectID": "talks/using_quarto/index.html",
+    "href": "talks/using_quarto/index.html",
+    "title": "Using quarto for Bioinformatics reporting",
     "section": "",
-    "text": "Using quarto for Bioinformatics reporting\n\n\n\nquarto\n\nreproducible research\n\n\n\n\n\n\n\n\n\nMay 21, 2025\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nIntegration of multi-omics datasets at the maternal-fetal interface: A case study in Preeclampsia\n\n\n\ntcr\n\ndecidua\n\nt-cells\n\n\n\n\n\n\n\n\n\nMay 4, 2023\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nFarm like bacteria protect WI children from eczema and wheezing\n\n\n\ntcr\n\ndecidua\n\nt-cells\n\n\n\n\n\n\n\n\n\nNov 17, 2022\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nA quality control pipeline for ChIP-exo and ChIP-nexus data\n\n\n\nChIP-exo\n\nChIP-nexus\n\n\n\n\n\n\n\n\n\nJun 24, 2016\n\n\nRene Welch\n\n\n\n\n\nNo matching items"
+    "text": "This are mostly some tricks that I wanted to share with other CISR members. The slides are available below:\n    View slides in full screen"
   },
   {
     "objectID": "index.html",
@@ -138,124 +145,5 @@
     "title": "Software",
     "section": "",
     "text": "SatTCR\n\n\n\ndocker\n\nsnakemake\n\nT-cells\n\nImmunology\n\nQC\n\n\n\n\n\n\n\n\n\nJan 11, 2025\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nmicrobiome-pipeline\n\n\n\nR\n\nmicrobiome\n\nQC\n\nsnakemake\n\n\n\n\n\n\n\n\n\nJul 12, 2023\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nChIPUtils\n\n\n\nR\n\ngenomics\n\nQC\n\nChIP-seq\n\n\n\n\n\n\n\n\n\nOct 3, 2017\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nChIPexoQual\n\n\n\nR\n\ngenomics\n\nQC\n\nChIP-exo\n\nChIP-nexus\n\n\n\n\n\n\n\n\n\nSep 6, 2017\n\n\nRene Welch\n\n\n\n\n\n\n\n\n\n\n\n\nSegvis\n\n\n\nR\n\ngenomics\n\nvisualization\n\n\n\n\n\n\n\n\n\nJul 3, 2015\n\n\nRene Welch\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "talks/using_quarto/index.html",
-    "href": "talks/using_quarto/index.html",
-    "title": "Using quarto for Bioinformatics reporting",
-    "section": "",
-    "text": "This are mostly some tricks that I wanted to share with other CISR members. The slides are available below:\n    View slides in full screen"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#quarto-notation-i",
-    "href": "talks/using_quarto/using_quarto.html#quarto-notation-i",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "quarto notation I",
-    "text": "quarto notation I\nInstead of adding everything inside the header ‘```{r}’ header, it looks like:\n\n```{r}\n#| label: \"test-plot\"\n#| include: true\n#| echo: \"fenced\"\n#| eval: false\n\nlibrary(magrittr)\nlibrary(tidyverse)\nlibrary(ggplot2)\n\ntibble(x = rnorm(20), y = rnorm(20)) |&gt;\n  ggplot(aes(x, y)) +\n    geom_point()\n```\n\n\necho: \"fenced\" gives the code blocks like that"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#quarto-notation-ii",
-    "href": "talks/using_quarto/using_quarto.html#quarto-notation-ii",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "quarto notation II",
-    "text": "quarto notation II\nmodifications to the output is done within :::, for example tabs:\n::: {.panel-tabset}\n\n## Element 1\n\n## Element 2\n\n:::\nrevealing slide points incrementally:\n\n::: {.incremental}\n\n point 1\n\n point 2\n\n:::"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#callouts",
-    "href": "talks/using_quarto/using_quarto.html#callouts",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "callouts",
-    "text": "callouts\nUsing something like:\n\n::: {.callout-important}\n\n# Important message\n\nThe results ....\n\n:::\n\nyields:\n\n\n\n\n\n\nImportant message\n\n\n\nThe results …."
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#add-html-files-inside-your-document-1",
-    "href": "talks/using_quarto/using_quarto.html#add-html-files-inside-your-document-1",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "add html files inside your document",
-    "text": "add html files inside your document\n\nIn the yaml header\n---\nresources:\n  - \"path/to/multiqc_report.html\"\n---\n\n\nIn a chunk\n\n```{r}\n#| label: \"multiqc-report\"\n#| echo: \"fenced\"\n#| eval: false\n\nknitr::include_url(\"path/to/multiqc_report.html\",\n  height = \"720px\")\n```\n\n\nIt looks as in: https://biostat.wisc.edu/~rwelch/onglab/albertini/SatTCR_report/qc.html#multiqc-report\n\nknitr::include_url(\"https://biostat.wisc.edu/~rwelch/onglab/albertini/SatTCR_report/qc.html#multiqc-report\", height = \"720px\")"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#step-1-render-function",
-    "href": "talks/using_quarto/using_quarto.html#step-1-render-function",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "step 1: render function",
-    "text": "step 1: render function\n\n```{r}\n#| label: \"setup-motif\"\n#| include: true\n#| echo: \"fenced\"\n#| eval: false\n\nrender_file &lt;- function(motif) {\n\n  res = knitr::knit_expand(\n    file = \"template_motif.qmd\",\n    motif = motif,\n    motif2 = snakecase::to_snake_case(motif))\n  res\n\n}\n\nunparsed &lt;- map(pdata$motif, render_file)\n```"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#the-template-file-looks-as",
-    "href": "talks/using_quarto/using_quarto.html#the-template-file-looks-as",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "the template file looks as",
-    "text": "the template file looks as"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#step-2-parse-the-template",
-    "href": "talks/using_quarto/using_quarto.html#step-2-parse-the-template",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "step 2: parse the template",
-    "text": "step 2: parse the template\n\n```{r}\n#| label: \"setup-motif-p2\"\n#| include: true\n#| echo: \"fenced\"\n#| eval: false\n\nunparsed &lt;- map(pdata$motif, render_file)\nparsed &lt;- knitr::knit_child(text = unlist(unparsed),\n   envir = rlang::env(\n    pdata = pdata\n  ))    \n```"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#step-3-evaluate-the-code-in-the-main-document",
-    "href": "talks/using_quarto/using_quarto.html#step-3-evaluate-the-code-in-the-main-document",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "step 3: evaluate the code in the main document",
-    "text": "step 3: evaluate the code in the main document\n\n\nIn summary:\n\nstep 1: replaces the “motif” word, wherever it says “{{motif}}”\nstep 2: added pdata into the environment that is evaluated in the template\nstep 3: parse the results"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#gt-httpsgt.rstudio.com",
-    "href": "talks/using_quarto/using_quarto.html#gt-httpsgt.rstudio.com",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "gt: https://gt.rstudio.com/",
-    "text": "gt: https://gt.rstudio.com/"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#gt-example",
-    "href": "talks/using_quarto/using_quarto.html#gt-example",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "gt example:",
-    "text": "gt example:\n\n```{r}\n#| label: \"model-example\"\n#| include: true\n#| echo: \"fenced\"\n#| eval: false\n\n  int_model |&gt;\n    tidy_zeroinfl() |&gt;\n    mutate(\n      component = if_else(component == \"conditional\", \"count\", \"zero\")) |&gt;\n    filter(term != \"(Intercept)\") |&gt;\n    select(- df.error, - original_term, -statistic) |&gt;\n    mutate(\n      term = case_when(\n        term == \"treatmenttreat\" ~ \"treatment\",\n        term == \"conditionB16_mixed\" ~ \"mixed dose\",\n        TRUE ~ \"interaction\")) |&gt;\n    gt::gt(\n      groupname_col = \"component\", rowname_col = \"term\") |&gt;\n      gt::fmt_number(one_of(c(\"estimate\", \"std.error\"))) |&gt;\n      gt::fmt_number(starts_with(\"conf\")) |&gt;\n      gt::fmt_percent(\"conf.level\") |&gt;\n      gt::fmt_scientific(\"p.value\") |&gt;\n      gt::cols_add(\n        psgn = if_else(p.value &lt;= 0.05, \"*\", \"\")) |&gt;\n      gt::cols_label(psgn = \"\")\n```"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#gt-example-1",
-    "href": "talks/using_quarto/using_quarto.html#gt-example-1",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "gt example:",
-    "text": "gt example:\n\n\n\nthis is a small table: for larger tables opt_interactive can allow for multiple pages"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#with-extensions",
-    "href": "talks/using_quarto/using_quarto.html#with-extensions",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "with extensions",
-    "text": "with extensions\nTo get this cat:\n\n\nInstall the fontawesome quarto extension: quarto add quarto-ext/fontawesome\nWrite {{ &lt; fa cat size=5x &gt; } }\n\nhttps://github.com/quarto-ext/fontawesome\nother extensions: https://quarto.org/docs/extensions/"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#with-images-and-knitr",
-    "href": "talks/using_quarto/using_quarto.html#with-images-and-knitr",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "with images and knitr",
-    "text": "with images and knitr\n\nfind a cat image\n\n\n\n\n\nopen image in new tab\ncopy link of new image"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#with-images-and-knitr-1",
-    "href": "talks/using_quarto/using_quarto.html#with-images-and-knitr-1",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "with images and knitr",
-    "text": "with images and knitr\n\nCodeCat\n\n\n\n```{r}\n#| label: \"cat-git2\"\n#| include: true\n#| echo: \"fenced\"\n#| eval: false\n\nknitr::include_url(\"https://i.giphy.com/VbnUQpnihPSIgIXuZv.webp\", height = \"600px\")\n```"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#extra-materials-from-people-who-know-more-than-me",
-    "href": "talks/using_quarto/using_quarto.html#extra-materials-from-people-who-know-more-than-me",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "extra materials from people who know more than me",
-    "text": "extra materials from people who know more than me\n\nQuarto authoring webinar https://jthomasmock.github.io/quarto-2hr-webinar/\nStephen Turner’s blog https://blog.stephenturner.us/p/quarto-books\nQuarto’s gallery https://quarto.org/docs/gallery/\nUsing python and R together https://nrennie.rbind.io/blog/combining-r-and-python-with-reticulate-and-quarto/"
-  },
-  {
-    "objectID": "talks/using_quarto/using_quarto.html#other-tricks",
-    "href": "talks/using_quarto/using_quarto.html#other-tricks",
-    "title": "Using quarto for bioinformatics reporting",
-    "section": "other tricks?",
-    "text": "other tricks?"
   }
 ]
