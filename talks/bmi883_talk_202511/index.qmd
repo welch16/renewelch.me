@@ -1,0 +1,25 @@
+---
+title: "A day in the life of Rene"
+date: 2025-11-14
+date_end: "2025-11-14"
+author: "Rene Welch"
+location: "Online"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+image: "featured.png"
+resources:
+  - slides.html
+  - slides_files/
+  - condesa.jpg
+  - wimr.jpg
+  - bikepath.jpeg
+  - altar.jpg
+categories:
+- quarto
+- reproducible research
+---
+
+Few slides about 1 day in my non-tenure track job:
+
+{{< revealjs slides.html >}}

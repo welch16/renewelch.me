@@ -18,7 +18,7 @@ about:
     - icon: gitlab
       text: GitLab
       href: https://git.doit.wisc.edu/RWELCH2
-    - text: 🦋 Bluesky
+    - text: "'{{< fa brands bluesky fa-1x>}}' Bluesky"
       href: https://bsky.app/profile/renewelch.bsky.social   
 ---
 

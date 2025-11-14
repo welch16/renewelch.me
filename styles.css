@@ -1,1 +1,6 @@
-/* css styles */
+    .inline-fragment {
+      display: flex;
+    }
+    .inline-fragment p { /* Or other element selectors like span, depending on content */
+      padding-right: 10px; /* Add spacing between fragments */
+    }

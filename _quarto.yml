@@ -12,17 +12,32 @@ project:
 website:
   title: "ReneWelch.me"
   navbar:
+    left:
+    - text: "{{< ai orcid >}}"
+      url: https://orcid.org/0000-0001-9861-530X
+    - text: "{{< ai google-scholar >}}"
+      url: https://scholar.google.com/citations?user=JDUaL9sAAAAJ&hl=en
+    - icon: linkedin
+      href: https://www.linkedin.com/in/welch16/
+    - icon: github
+      href: https://github.com/welch16
+    - icon: gitlab
+      href: https://git.doit.wisc.edu/RWELCH2
+    - text: '{{< fa brands bluesky fa-1x>}}'
+      href: https://bsky.app/profile/renewelch.bsky.social   
+    - icon: rss
+      href: index.xml
     right:
       - blog.qmd
-      # - publications.qmd
+      #- publications.qmd
       - talks.qmd
       - software.qmd
       - CV
 
 format:
   html:
-    theme: sandstone
-    css: styles.css
+    theme: lumen
+    # css: styles.css
 
 site-url: www.renewelch.me
 
