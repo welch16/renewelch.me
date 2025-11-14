@@ -7,7 +7,7 @@ location: "Online"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-image: "featured.png"
+image: "altar.png"
 resources:
   - slides.html
   - slides_files/
