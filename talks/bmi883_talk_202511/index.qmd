@@ -7,7 +7,7 @@ location: "Online"
 draft: false
 # layout options: single, single-sidebar
 layout: single
-image: "altar.jpg"
+image: "desk.jpg"
 resources:
   - slides.html
   - slides_files/
@@ -15,6 +15,7 @@ resources:
   - wimr.jpg
   - bikepath.jpeg
   - altar.jpg
+  - desk.jpg
 categories:
 - quarto
 - reproducible research
