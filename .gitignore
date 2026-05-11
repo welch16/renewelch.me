@@ -9,3 +9,4 @@ public/
 .bash_profile
 _freeze/
 _site/
+**/*.quarto_ipynb

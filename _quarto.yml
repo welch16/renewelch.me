@@ -29,7 +29,7 @@ website:
       href: index.xml
     right:
       - blog.qmd
-      #- publications.qmd
+      - publications.qmd
       - talks.qmd
       - software.qmd
       - CV

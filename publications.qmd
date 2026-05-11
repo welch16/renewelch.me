@@ -1,0 +1,75 @@
+---
+title: "Publications"
+format:
+  html:
+    toc: true
+---
+
+## 2026
+
+T Lawler, J Long, **R Welch**, I Ong, O Ogunmuyiwa, R A Khatri, M Shrubsole, S Warren Andersen, _"A Genome‐Wide Association Study of Colorectal Cancer Mortality Outcomes Among Individuals of African and Admixture Ancestry"_, Molecular Carcinogenesis
+
+C P Kerr, W J Jin, P Liu, J J Grudzinski, C A Ferreira, H Comas Rojas, A J Oñate, O Kwon, M Hyun, M B Idrissou, **R Welch Schwartz**, J M Vera, P A Clark, A Adeniyi, M Takashima, A K Erbe, A G Shea, M Powers, A N Pinchuk, C F Massey, C Choi, R Hernandez, B P Bednarz, I M Ong, J P Weichert, Z S Morris, _"Priming versus propagating: distinct immune effects of alpha- versus beta-particle emitting radiopharmaceuticals when combined with immune checkpoint inhibition in mice"_, Nature Communications, 17, 2044
+
+## 2025
+
+**R Welch Schwartz**, C L Zuleger, M A Newton, D M Vail, M R Albertini, I M Ong, _"SatTCR: a pipeline for performing saturation analysis of the T cell receptor repertoire and a case study of a healthy canine"_, MethodsX, 103733
+
+U S Polaki, T E Gilpin, A T Patil, E Chiu, R Baker, P Liu, T S Pavletich, M Seifi, P M Mañán-Mejías, J Morrissey, J Port, **R Welch Schwartz**, I M Ong, D El-Rayes, M A Khalifa, P Hui, V L Horner, M Virumbrales-Muñoz, B K Erickson, L Barroilhet, S M McGregor, E H Bresnick, D R Matson, _"Loss of GATA2 promotes invasion and predicts cancer recurrence and survival in uterine serous carcinoma"_, JCI insight, 10-9, e187073
+
+**R Welch Schwartz**, A Ahmed, R Hu, R J Kimple, P M Harari, I M Ong, S C Kerr, _"Abstract B027: Spatial transcriptomic profiling of the head and neck cancer tumor microenvironment to guide design of microphysiological systems for reporting treatment response"_, Cancer Research, 85-5_Supplement, B027-B027
+
+## 2024
+
+C Kerr, WJ Jin, P Liu, JJ Grudzinski, CA Ferreira, H Comas Rojas, AJ Onate, O Kwon, M Hyun, M Bio Idrissou, **R Welch Schwartz**, PA Clark, M Takashima, AG Shea, AN Pinchuk, R Hernandez, B Bednarz, IM Ong, J Weichert, Z Morris, _"Tumor immunity following radiopharmaceutical+ checkpoint blockade varies with treatment sequence, radioisotope and tumor immunogenicity"_. International Journal of Radiation Oncology, Biology, Physics, 120-2, S96
+
+M R Albertini, C L Zuleger, E A Ranheim, O Shiyanbola, P M Sondel, Z S Morris, J Eickhoff, M A Newton, I M Ong, **R Welch Schwartz**, R Hayim, I D Kurzman, M Turek, D M Vail, _"Administration of intratumoral GD2-directed interleukin-2 immunocytokine and local radiation therapy to activate immune rejection of spontaneous canine melanoma"_, Melanoma research, 34-4, 307-318
+
+C L Zuleger, **R Welch Schwartz**, I M Ong, M A Newton, D M Vail, M R Albertini, _"Development of a next-generation sequencing protocol for the canine T cell receptor beta chain repertoire"_, Veterinary immunology and immunopathology, 268, 110702
+
+Critical assessment of genome interpretation consortium, _"Critical assessment of genome interpretation consortium. CAGI, the critical assessment of genome interpretation, establishes progress and pprospects for computational genetic variant interpretation methods."_, Genome Biology, 25-1, 1-46
+
+## 2023
+
+D A Chasman, **R Welch Schwartz**, J Vazquez, M Chavarria, E T Jenkins, G E Lopez, C T Tyler, A K Stanic, I M Ong, _"Proteogenomic and V (D) J analysis of human decidual T cells highlights unique transcriptional programming and clonal distribution"_, The Journal of Immunology, 211-1, 154-162
+
+
+L A Parlato, **R Welch**, I M Ong, J Long, Q Cai, M D Steinwandel, W J Blot, W Zheng, S Warren Andersen, _"Genome-wide association study (GWAS) of circulating vitamin D outcomes among individuals of African ancestry"_, The American Journal of Clinical Nutrition, 117-2, 308-316
+
+
+**R Welch**, AR Y Collier, J Vazquez, S Banerjee, D Chasman, A Stanic-Kostic, I M Ong, _"Single Cell Multi-Omic Analysis of Intervillous Lymphocytes in Preeclampsia"_, REPRODUCTIVE SCIENCES, 30, 103A-104A
+
+## 2022
+
+M Albertini, C Zuleger, E Ranheim, O Shiyanbola, A Kosharek, P Sondel, Z Morris, J Eickhoff, M Newton, I Ong, **R Welch Schwartz**, R Hayim, S Adrianowycz, R Uyehara, I Kurzman, M Turek, D Vail, _"Administration of intratumoral hu14. 18-IL2 immunocytokine and local radiation therapy to activate immune rejection of spontaneous canine melanoma"_, Journal for ImmunoTherapy of Cancer, 10-Suppl 2
+
+## 2021
+
+J Vazquez, M Chavarria, D A Chasman, **R Welch Schwartz**, C T Tyler, G Lopez, R C Fisher, I M Ong, A K Stanic, _"Multiomic analysis reveals decidual‐specific transcriptional programing of MAIT cells"_, American Journal of Reproductive Immunology, 86-6, e13495
+
+A LFV Assumpção, G Fu, D K Singh, Z Lu, A M Kuehnl, **R Welch**, I M Ong, R Wen, X Pan, _"A lineage-specific requirement for YY1 Polycomb Group protein function in early T cell development"_, Development, 148-7, dev197319
+
+## 2020
+
+The ENCODE Project Consortium, _"Perspectives on ENCODE"_, Nature, 583-7818, 693-698
+
+The ENCODE Project Consortium, _"Expanded encyclopaedias of DNA elements in the human and mouse genomes"_, 
+Nature, 583-7818, 699-710
+
+## 2019
+
+M R Eichelberg, **R Welch**, J T Guidry, A Ali, M Ohashi, K R Makielski, K McChesney, N Van Sciver, P F Lambert, S Keleș, S C Kenney, R S Scott, E Johannsen, _"Epstein-Barr virus infection promotes epithelial cell growth by attenuating differentiation-dependent exit from the cell cycle"_, MBio, 10-4, 10.1128/mbio. 01332-19
+
+## 2017
+
+**R Welch**, D Chung, J Grass, R Landick, S Keleş, _"Data exploration, quality control and statistical analysis of ChIP-exo/nexus experiments"_, Nucleic Acid Research, 45-15, e145-e145
+
+A Kreimer, H Zeng, M D Edwards, Y Guo, K Tian, S Shin, **R Welch**, M Wainberg, R Mohan, N A Sinnott‐Armstrong, Y Li, G Eraslan, T Bin Amin, R Tewhey, P C Sabeti, J Goke, N S Mueller, M Kellis, A Kundaje, M A Beer, S Keles, D K Gifford, N Yosef, _"Predicting gene expression in massively parallel reporter assays: A comparative study"_, Human mutation, 38-9, 1240-1250
+
+## 2016
+
+A Wang, **R Welch**, B Zhao, T Ta, S Keleş, E Johannsen, _"Epstein-Barr virus nuclear antigen 3 (EBNA3) proteins regulate EBNA2 binding to distinct RBPJ genomic sites"_, Journal of virology, 90-6, 2906-2919
+
+## 2015
+
+X Zeng, B Li, **R Welch**, C Rojo, Y Zheng, C N Dewey, S Keleş, _"Perm-seq: mapping protein-DNA interactions in segmental duplication and highly repetitive regions of genomes with prior-enhanced read mapping"_, PLoS computational biology, 11-10, e1004491
