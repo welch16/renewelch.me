@@ -7,6 +7,8 @@ format:
 
 ## 2026
 
+T Debnath, W Jin, R B Patel, P M Carlson, Md M Rahman, T J Berg, C P Kerr, **R Welch Schwartz**, Y Wang, M Hyun, I M Ong, J P Weichert, R Hernandez, P M Sondel, Z S Morrism _"In situ vaccination, low-dose targeted radionuclide therapy, and immune checkpoint inhibition eradicate poorly immunogenic metastatic tumors in murine cancer models"_, Cancer Immunology Research
+
 C P Kerr, W J Jin, P Liu, J J Grudzinski, C A Ferreira, H Comas Rojas, A J Oñate, O Kwon, M Hyun, M B Idrissou, **R Welch Schwartz**, J M Vera, P A Clark, A Adeniyi, M Takashima, A K Erbe, A G Shea, M Powers, A N Pinchuk, C F Massey, C Choi, R Hernandez, B P Bednarz, I M Ong, J P Weichert, Z S Morris, _"Priming versus propagating: distinct immune effects of alpha- versus beta-particle emitting radiopharmaceuticals when combined with immune checkpoint inhibition in mice"_, Nature Communications, 17, 2044
 
 T Lawler, J Long, **R Welch**, I Ong, O Ogunmuyiwa, R A Khatri, M Shrubsole, S Warren Andersen, _"A Genome‐Wide Association Study of Colorectal Cancer Mortality Outcomes Among Individuals of African and Admixture Ancestry"_, Molecular Carcinogenesis
