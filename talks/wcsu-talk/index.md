@@ -9,9 +9,8 @@ draft: false
 # layout options: single, single-sidebar
 layout: single
 categories:
-- tcr
-- decidua
-- t-cells
+- dust
+- 16S
 ---
 
 ![](featured.png)
