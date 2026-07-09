@@ -10,3 +10,4 @@ public/
 _freeze/
 _site/
 **/*.quarto_ipynb
+_extensions
