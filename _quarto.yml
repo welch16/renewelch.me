@@ -32,12 +32,12 @@ website:
       - publications.qmd
       - talks.qmd
       - software.qmd
-      - CV
+      # - CV
 
 format:
   html:
     theme: [lumen, styles.scss]
-    # css: styles.css
+    # css: styles.css1
 
 site-url: www.renewelch.me
 
