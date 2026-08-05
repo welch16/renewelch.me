@@ -36,7 +36,7 @@ website:
 
 format:
   html:
-    theme: lumen
+    theme: [lumen, styles.scss]
     # css: styles.css
 
 site-url: www.renewelch.me
