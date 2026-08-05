@@ -16,7 +16,7 @@ website:
     - text: "{{< ai orcid >}}"
       url: https://orcid.org/0000-0001-9861-530X
     - text: "{{< ai google-scholar >}}"
-      url: https://scholar.google.com/citations?user=JDUaL9sAAAAJ&hl=en
+      url: https://scholar.google.com/citations?user=nsqGh6UAAAAJ&hl
     - icon: linkedin
       href: https://www.linkedin.com/in/welch16/
     - icon: github
