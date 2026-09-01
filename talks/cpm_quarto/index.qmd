@@ -1,0 +1,24 @@
+---
+title: "Using quarto for Bioinformatics reporting"
+date: 2026-09-21
+date_end: "2026-09-21"
+author: "Rene Welch"
+location: "Online"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+image: "featured.png"
+resources:
+  - using_quarto.html
+  - using_quarto_files/
+  - images/
+categories:
+- quarto
+- reproducible research
+---
+
+This is an updated version of the "Using quarto for bioinformatic reporting" talk that I gave in the [CISR](https://cancer.wisc.edu/research/resources/cisr/) technical meeting. I am presenting this time in front of the [Center of Precision Medicine](https://precisionmedicine.wisc.edu/) Bioinformatics User Group.
+
+{{< revealjs using_quarto.html >}}
+
+The raw code to generate the slides is available in [GitHub](https://github.com/welch16/using_quarto)
