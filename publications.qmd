@@ -16,6 +16,8 @@ C P Kerr, W J Jin, P Liu, J J Grudzinski, C A Ferreira, H Comas Rojas, A J Oñat
 
 T Lawler, J Long, **R Welch**, I Ong, O Ogunmuyiwa, R A Khatri, M Shrubsole, S Warren Andersen, _"A Genome‐Wide Association Study of Colorectal Cancer Mortality Outcomes Among Individuals of African and Admixture Ancestry"_, Molecular Carcinogenesis
 
+### Pre-prints
+
 ## 2025
 
 **R Welch Schwartz**, C L Zuleger, M A Newton, D M Vail, M R Albertini, I M Ong, _"SatTCR: a pipeline for performing saturation analysis of the T cell receptor repertoire and a case study of a healthy canine"_, MethodsX, 103733

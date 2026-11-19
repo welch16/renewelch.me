@@ -1,5 +1,5 @@
 ---
-title: "Computing the statistical power with Wilcox tests"
+title: "Computing the statistical power of Wilcoxon rank-sum tests"
 # excerpt: "I made a poster format available in Overleaf"
 date: last-modified
 author: "Rene Welch"
