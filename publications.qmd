@@ -18,6 +18,10 @@ T Lawler, J Long, **R Welch**, I Ong, O Ogunmuyiwa, R A Khatri, M Shrubsole, S W
 
 ### Pre-prints
 
+M E Takashima, O Kwon, Z Ells, V R Li, C Sawicki, **R Welch Schwartz**, S H Ahn, M Hyun, M B Idrissou, T J Berg, P A Clark, M Lawless, A Besemer, T Bradshaw, S Perlman, W Jin, M Antonelli, A O Adeniyi, C D Haasch, T Chen, Y Wang, R Kumari, R T Hernandez, J Weichert, A P Belanger, I M Ong, J Floberg, C Meyer, A U Kishan, J Calais, B Bednarz, Z S Morris, _"Intratumoral dose heterogeneity promotes adaptive anti-tumor immunity and predicts clinical response to radiopharmaceutical therapy"_, <https://www.biorxiv.org/content/10.64898/2026.07.23.740178v3.abstract>
+
+A Ahmed, N Hendrikse, **R Welch Schwartz**, Y Li, M Lares, C K Felix,  A R Burr, I M Ong, P M Harari, D J Beebe, S C Kerr, _"A Head and Neck Cancer Patient-Specific Microphysiological System for Predicting Response to Chemoradiation"_, <https://www.biorxiv.org/content/10.64898/2026.04.28.721391v1>
+
 ## 2025
 
 **R Welch Schwartz**, C L Zuleger, M A Newton, D M Vail, M R Albertini, I M Ong, _"SatTCR: a pipeline for performing saturation analysis of the T cell receptor repertoire and a case study of a healthy canine"_, MethodsX, 103733
