@@ -5,6 +5,12 @@ format:
     toc: true
 ---
 
+## Pre-prints
+
+M E Takashima, O Kwon, Z Ells, V R Li, C Sawicki, **R Welch Schwartz**, S H Ahn, M Hyun, M B Idrissou, T J Berg, P A Clark, M Lawless, A Besemer, T Bradshaw, S Perlman, W Jin, M Antonelli, A O Adeniyi, C D Haasch, T Chen, Y Wang, R Kumari, R T Hernandez, J Weichert, A P Belanger, I M Ong, J Floberg, C Meyer, A U Kishan, J Calais, B Bednarz, Z S Morris, _"Intratumoral dose heterogeneity promotes adaptive anti-tumor immunity and predicts clinical response to radiopharmaceutical therapy"_, <https://www.biorxiv.org/content/10.64898/2026.07.23.740178v3.abstract>
+
+A Ahmed, N Hendrikse, **R Welch Schwartz**, Y Li, M Lares, C K Felix,  A R Burr, I M Ong, P M Harari, D J Beebe, S C Kerr, _"A Head and Neck Cancer Patient-Specific Microphysiological System for Predicting Response to Chemoradiation"_, <https://www.biorxiv.org/content/10.64898/2026.04.28.721391v1>
+
 ## 2026
 
 T Debnath, W Jin, R B Patel, P M Carlson, Md M Rahman, T J Berg, C P Kerr, **R Welch Schwartz**, Y Wang, M Hyun, I M Ong, J P Weichert, R Hernandez, P M Sondel, Z S Morris, _"In situ vaccination, low-dose targeted radionuclide therapy, and immune checkpoint inhibition eradicate poorly immunogenic metastatic tumors in murine cancer models"_, Cancer Immunology Research
@@ -15,12 +21,6 @@ A Gao, P H Khatri, G Ma, P Liu, A Fernandez-Martinez, K Donahue, Y Wang, EJ Kim,
 C P Kerr, W J Jin, P Liu, J J Grudzinski, C A Ferreira, H Comas Rojas, A J Oñate, O Kwon, M Hyun, M B Idrissou, **R Welch Schwartz**, J M Vera, P A Clark, A Adeniyi, M Takashima, A K Erbe, A G Shea, M Powers, A N Pinchuk, C F Massey, C Choi, R Hernandez, B P Bednarz, I M Ong, J P Weichert, Z S Morris, _"Priming versus propagating: distinct immune effects of alpha- versus beta-particle emitting radiopharmaceuticals when combined with immune checkpoint inhibition in mice"_, Nature Communications, 17, 2044
 
 T Lawler, J Long, **R Welch**, I Ong, O Ogunmuyiwa, R A Khatri, M Shrubsole, S Warren Andersen, _"A Genome‐Wide Association Study of Colorectal Cancer Mortality Outcomes Among Individuals of African and Admixture Ancestry"_, Molecular Carcinogenesis
-
-### Pre-prints
-
-M E Takashima, O Kwon, Z Ells, V R Li, C Sawicki, **R Welch Schwartz**, S H Ahn, M Hyun, M B Idrissou, T J Berg, P A Clark, M Lawless, A Besemer, T Bradshaw, S Perlman, W Jin, M Antonelli, A O Adeniyi, C D Haasch, T Chen, Y Wang, R Kumari, R T Hernandez, J Weichert, A P Belanger, I M Ong, J Floberg, C Meyer, A U Kishan, J Calais, B Bednarz, Z S Morris, _"Intratumoral dose heterogeneity promotes adaptive anti-tumor immunity and predicts clinical response to radiopharmaceutical therapy"_, <https://www.biorxiv.org/content/10.64898/2026.07.23.740178v3.abstract>
-
-A Ahmed, N Hendrikse, **R Welch Schwartz**, Y Li, M Lares, C K Felix,  A R Burr, I M Ong, P M Harari, D J Beebe, S C Kerr, _"A Head and Neck Cancer Patient-Specific Microphysiological System for Predicting Response to Chemoradiation"_, <https://www.biorxiv.org/content/10.64898/2026.04.28.721391v1>
 
 ## 2025
 
